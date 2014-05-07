@@ -1,0 +1,12 @@
+[user]
+  name = Sahil Muthoo
+  email = sahil.muthoo@gmail.com
+[credential]
+  helper = osxkeychain
+[push]
+  default = simple
+[core]
+  excludesfile = /Users/sahilm/.gitignore_global
+[alias]
+  st = status
+  co = checkout

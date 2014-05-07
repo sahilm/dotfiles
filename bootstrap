@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+set -e
+which brew &> /dev/null || ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+brew bundle
+mkdir -p $HOME/bin
+ln -sf $PWD/`basename "$0"` $HOME/bin/
+find $PWD -name '.[^.DS_Store]*' -type f -depth 1 | xargs -I % ln -sf % $HOME/
