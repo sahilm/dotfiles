@@ -1,4 +1,5 @@
 update
+upgrade
 install macvim --override-system-vim
 install axel
 install bash-completion
