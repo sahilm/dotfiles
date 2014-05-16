@@ -14,3 +14,15 @@ export JAVA_HOME=`/usr/libexec/java_home`
 alias ls='ls -G'
 alias ll='ls -laG'
 alias la='ls -laG'
+shopt -s nocaseglob
+
+export HISTCONTROL=ignoredups:erasedups
+export HISTSIZE=1000000
+export HISTFILESIZE=1000000
+shopt -s histappend
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+shopt -s cdspell
+for option in autocd globstar; do
+  shopt -s "$option" 2> /dev/null
+done
