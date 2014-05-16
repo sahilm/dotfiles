@@ -9,4 +9,6 @@ install maven
 install node
 install phantomjs
 install postgresql
+install cloc
+install bash
 doctor

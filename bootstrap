@@ -1,7 +1,24 @@
 #! /usr/bin/env bash
-set -e
+
 which brew &> /dev/null || ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 brew bundle
 mkdir -p $HOME/bin
 ln -sfv $PWD/`basename "$0"` $HOME/bin
 find $PWD -name '.[^.DS_Store]*' -type f -depth 1 | xargs -I % ln -sfv % $HOME
+
+BREW_BASH="`brew --prefix`/bin/bash"
+if ! grep -q "$BREW_BASH" /etc/shells; then
+  sudo echo "/usr/local/bin/bash" >> /etc/shells
+fi
+sudo chsh -s "$BREW_BASH" sahilm
+
+RBENV_ROOT=$HOME/.rbenv
+if [[ ! -d $RBENV_ROOT ]]; then
+  git clone https://github.com/sstephenson/rbenv.git $RBENV_ROOT
+  mkdir -p $RBENV_ROOT/plugins
+  git clone https://github.com/sstephenson/ruby-build.git $RBENV_ROOT/plugins/ruby-build
+fi
+
+source ~/.bash_profile
+rbenv update
+echo 'Bootstrap complete'
