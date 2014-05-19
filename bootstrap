@@ -13,8 +13,8 @@ find $PWD -name '.[^.DS_Store]*' -type f -depth 1 | xargs -I % ln -sfv % $HOME
 # Get the fullpath of brew's bash
 BREW_BASH="`brew --prefix`/bin/bash"
 # Drop an entry into /etc/shells if it doesn't already exist
-if ! grep -q "$BREW_BASH" /etc/shells; then
-  sudo echo "/usr/local/bin/bash" >> /etc/shells
+if ! grep -q $BREW_BASH /etc/shells; then
+  sudo bash -c "echo $BREW_BASH >> /etc/shells"
 fi
 # Switch to the latest bash
 sudo chsh -s "$BREW_BASH" $USER
