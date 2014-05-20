@@ -6,8 +6,6 @@ which brew &> /dev/null || ruby -e "$(curl -fsSL https://raw.github.com/Homebrew
 brew bundle
 # Create a personal bindir
 mkdir -p $HOME/bin
-# Symlink this script into my bindir. Lets me run bootstrap from anywhere
-ln -sfv $PWD/`basename "$0"` $HOME/bin
 # Copy all dotfiles to $HOME
 find $PWD -name '.[^.DS_Store]*' -type f -depth 1 | xargs -I % ln -sfv % $HOME
 # Get the fullpath of brew's bash
