@@ -14,8 +14,7 @@ export GIT_PS1_SHOWCOLORHINTS=1
 export PROMPT_COMMAND='__git_ps1 "\w" " "'
 # Set the RBENV root env var
 export RBENV_ROOT=$HOME/.rbenv
-# Add current working directory's bin, personal bin, rbenv's bin and brew's bin to the PATH
-export PATH=./bin:$HOME/bin:$RBENV_ROOT/bin:/usr/local/bin:$PATH
+export PATH=./bin:./node_modules/.bin:$HOME/bin:$RBENV_ROOT/bin:/usr/local/bin:$PATH
 # Enable rbenv
 eval "$(rbenv init -)"
 # English/UTF8 default
