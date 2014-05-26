@@ -1,34 +1,32 @@
 #! /usr/bin/env bash
 
-# Install homebrew if it doesn't exist
 which brew &> /dev/null || ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-# Run everything in the Brewfile
 brew bundle
-# Create a personal bindir
 mkdir -p $HOME/bin
-# Copy all dotfiles to $HOME
 find $PWD -name '.[^.DS_Store]*' -type f -depth 1 | xargs -I % ln -sfv % $HOME
-# Get the fullpath of brew's bash
 BREW_BASH="`brew --prefix`/bin/bash"
-# Drop an entry into /etc/shells if it doesn't already exist
 if ! grep -q $BREW_BASH /etc/shells; then
   sudo bash -c "echo $BREW_BASH >> /etc/shells"
 fi
 if ! which bash | grep -q $BREW_BASH ; then
-  # Switch to the latest bash
   sudo chsh -s "$BREW_BASH" $USER
 fi
-# rbenv install path. Don't use rbenv from homebrew because I need to update it more frequently.
 RBENV_ROOT=$HOME/.rbenv
-# Install rbenv, ruby-build and rbenv-update if it doesn't already exist
 if [[ ! -d $RBENV_ROOT ]]; then
   git clone https://github.com/sstephenson/rbenv.git $RBENV_ROOT
-  mkdir -p $RBENV_ROOT/plugins
+fi
+mkdir -p $RBENV_ROOT/plugins
+if [[ ! -d $RBENV_ROOT/plugins/ruby-build ]]; then
   git clone https://github.com/sstephenson/ruby-build.git $RBENV_ROOT/plugins/ruby-build
+fi
+if [[ ! -d $RBENV_ROOT/plugins/rbenv-update ]]; then
   git clone https://github.com/rkh/rbenv-update.git $RBENV_ROOT/plugins/rbenv-update
 fi
-# Source the bash profile so that I can run rbenv update
+if [[ ! -d $RBENV_ROOT/plugins/rbenv-communal-gems ]]; then
+  git clone https://github.com/tpope/rbenv-communal-gems.git $RBENV_ROOT/plugins/rbenv-communal-gems
+fi
+
 source $HOME/.bash_profile
-# Update rbenv
 rbenv update
+rbenv communize --all
 echo 'Bootstrap complete'
