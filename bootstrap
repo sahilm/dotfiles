@@ -14,9 +14,10 @@ BREW_BASH="`brew --prefix`/bin/bash"
 if ! grep -q $BREW_BASH /etc/shells; then
   sudo bash -c "echo $BREW_BASH >> /etc/shells"
 fi
-# Switch to the latest bash
-sudo chsh -s "$BREW_BASH" $USER
-
+if ! which bash | grep -q $BREW_BASH ; then
+  # Switch to the latest bash
+  sudo chsh -s "$BREW_BASH" $USER
+fi
 # rbenv install path. Don't use rbenv from homebrew because I need to update it more frequently.
 RBENV_ROOT=$HOME/.rbenv
 # Install rbenv, ruby-build and rbenv-update if it doesn't already exist
