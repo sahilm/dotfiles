@@ -1,12 +1,24 @@
 [user]
   name = Sahil Muthoo
   email = sahil.muthoo@gmail.com
+[color]
+  ui = auto
 [credential]
   helper = osxkeychain
 [push]
   default = simple
 [core]
+  editor = vim
+  whitespace = trailing-space,space-before-tab
   excludesfile = ~/.gitignore_global
 [alias]
   st = "status -sb"
   co = checkout
+  l  = log --graph --abbrev-commit --date=relative
+  ll = log --graph --abbrev-commit --date=relative --name-status
+  llo = log --graph --abbrev-commit --date=relative --name-status master..origin/master
+  lp = log --graph --abbrev-commit --date=relative -p --word-diff
+  lpo = log --graph --abbrev-commit --date=relative -p master..origin/master --word-diff
+  lo = log --graph --abbrev-commit --date=relative master..origin/master
+[format]
+  pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
