@@ -14,6 +14,7 @@ export PROMPT_COMMAND='__git_ps1 "\w" " "'
 # Set the RBENV root env var
 export RBENV_ROOT=$HOME/.rbenv
 export PATH=./bin:./node_modules/.bin:$HOME/bin:$RBENV_ROOT/bin:/usr/local/bin:$PATH
+export PAGER=less
 # Enable rbenv
 eval "$(rbenv init -)"
 export LC_ALL=en_US.UTF-8
