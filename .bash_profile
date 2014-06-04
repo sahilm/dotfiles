@@ -1,6 +1,3 @@
-source $(brew --prefix)/etc/bash_completion
-# Enable a fancy git prompt from brew's bash completion package
-source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
 # Show unstaged(*) and staged(+) changes
 export GIT_PS1_SHOWDIRTYSTATE=1
 # Show stashes($)
@@ -37,3 +34,9 @@ PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
 for option in nocaseglob cdspell autocd globstar; do
   shopt -s "$option" 2> /dev/null
 done
+
+source $(brew --prefix)/etc/bash_completion
+# Enable a fancy git prompt from brew's bash completion package
+source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
+# Enable completion-ruby
+source $HOME/.completion-ruby/completion-ruby-all

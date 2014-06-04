@@ -1,6 +1,8 @@
 update
 upgrade
 linkapps
+tap homebrew/completions
+install vagrant-completion
 install macvim --override-system-vim
 install axel
 install bash-completion

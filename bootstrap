@@ -34,6 +34,12 @@ if [[ ! -d $RBENV_ROOT/plugins/rbenv-gem-rehash ]]; then
   git clone https://github.com/sstephenson/rbenv-gem-rehash $RBENV_ROOT/plugins/rbenv-gem-rehash
 fi
 
+if [[ ! -d $HOME/.completion-ruby ]]; then
+  git clone https://github.com/mernen/completion-ruby.git $HOME/.completion-ruby
+else
+  cd $HOME/.completion-ruby && git pull
+fi
+
 source $HOME/.bash_profile
 rbenv update
 echo 'Bootstrap complete'
