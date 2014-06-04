@@ -4,29 +4,36 @@ which brew &> /dev/null || ruby -e "$(curl -fsSL https://raw.github.com/Homebrew
 brew bundle
 mkdir -p $HOME/bin
 find $PWD -name '.[^.DS_Store]*' -type f -depth 1 | xargs -I % ln -sfv % $HOME
+
 BREW_BASH="`brew --prefix`/bin/bash"
 if ! grep -q $BREW_BASH /etc/shells; then
   sudo bash -c "echo $BREW_BASH >> /etc/shells"
 fi
+
 if ! which bash | grep -q $BREW_BASH ; then
   sudo chsh -s "$BREW_BASH" $USER
 fi
+
 RBENV_ROOT=$HOME/.rbenv
+
 if [[ ! -d $RBENV_ROOT ]]; then
   git clone https://github.com/sstephenson/rbenv.git $RBENV_ROOT
 fi
+
 mkdir -p $RBENV_ROOT/plugins
+
 if [[ ! -d $RBENV_ROOT/plugins/ruby-build ]]; then
-  git clone https://github.com/sstephenson/ruby-build.git $RBENV_ROOT/plugins/ruby-build
+  git clone https://github.com/sstephenson/ruby-build $RBENV_ROOT/plugins/ruby-build
 fi
+
 if [[ ! -d $RBENV_ROOT/plugins/rbenv-update ]]; then
-  git clone https://github.com/rkh/rbenv-update.git $RBENV_ROOT/plugins/rbenv-update
+  git clone https://github.com/rkh/rbenv-update $RBENV_ROOT/plugins/rbenv-update
 fi
-if [[ ! -d $RBENV_ROOT/plugins/rbenv-communal-gems ]]; then
-  git clone https://github.com/tpope/rbenv-communal-gems.git $RBENV_ROOT/plugins/rbenv-communal-gems
+
+if [[ ! -d $RBENV_ROOT/plugins/rbenv-gem-rehash ]]; then
+  git clone https://github.com/sstephenson/rbenv-gem-rehash $RBENV_ROOT/plugins/rbenv-gem-rehash
 fi
 
 source $HOME/.bash_profile
 rbenv update
-rbenv communize --all
 echo 'Bootstrap complete'
