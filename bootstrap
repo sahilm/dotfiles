@@ -44,5 +44,6 @@ if [[ -z "$NORBENV" ]]; then
   install_rbenv
 fi
 git_sync "https://github.com/mernen/completion-ruby/" $HOME/.completion-ruby
+set +e
 source $HOME/.bash_profile
 echo 'Bootstrap complete'
