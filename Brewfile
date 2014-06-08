@@ -8,6 +8,7 @@ install axel
 install bash-completion
 install chromedriver
 install git --with-pcre
+install svn
 install maven
 install node
 install phantomjs
