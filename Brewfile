@@ -15,4 +15,6 @@ install phantomjs
 install postgresql
 install cloc
 install bash
+install irssi
+install unrar
 doctor
