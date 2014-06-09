@@ -1,6 +1,8 @@
 update
 upgrade
 linkapps
+tap homebrew/binary
+install perforce
 tap homebrew/completions
 install vagrant-completion
 install macvim --override-system-vim
