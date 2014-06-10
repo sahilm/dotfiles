@@ -20,4 +20,5 @@ install cloc
 install bash
 install irssi
 install unrar
+install coreutils
 doctor
