@@ -18,7 +18,7 @@ install phantomjs
 install postgresql
 install cloc
 install bash
-install irssi
+install weechat --with-aspell --with-ruby --with-python
 install unrar
 install coreutils
 doctor
