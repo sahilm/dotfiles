@@ -21,4 +21,5 @@ install bash
 install weechat --with-aspell --with-ruby --with-python
 install unrar
 install coreutils
+install ant
 doctor
