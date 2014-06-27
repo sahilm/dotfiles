@@ -1,17 +1,23 @@
 update
+
 upgrade
+
 linkapps
+
 tap homebrew/binary
-install perforce
-install hg
 tap homebrew/completions
+
 install vagrant-completion
 install macvim --override-system-vim
 install axel
 install bash-completion
 install chromedriver
-install git --with-pcre
+install curl
+install openssl
+install perforce
+install hg
 install svn
+install git --with-blk-sha1 --with-pcre --with-brewed-curl --with-brewed-openssl --with-persistent-https
 install maven
 install node
 install phantomjs
@@ -22,4 +28,7 @@ install weechat --with-aspell --with-ruby --with-python
 install unrar
 install coreutils
 install ant
+install sqlite
+install go
+install direnv
 doctor

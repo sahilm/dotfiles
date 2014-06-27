@@ -40,3 +40,5 @@ source $(brew --prefix)/etc/bash_completion
 source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
 # Enable completion-ruby
 source $HOME/.completion-ruby/completion-ruby-all
+# Enable direnv
+eval "$(direnv hook $0)"
