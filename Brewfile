@@ -31,4 +31,6 @@ install ant
 install sqlite
 install go
 install direnv
+install pstree
+install tree
 doctor
