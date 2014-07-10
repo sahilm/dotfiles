@@ -22,6 +22,15 @@ alias ls='ls -G'
 alias ll='ls -laG'
 alias l='ll'
 alias la='ll'
+
+source $(brew --prefix)/etc/bash_completion
+# Enable a fancy git prompt from brew's bash completion package
+source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
+# Enable completion-ruby
+source $HOME/.completion-ruby/completion-ruby-all
+# Enable direnv
+eval "$(direnv hook $0)"
+
 # See http://unix.stackexchange.com/a/18443
 HISTCONTROL=ignoredups:erasedups
 shopt -s histappend
@@ -34,11 +43,3 @@ PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
 for option in nocaseglob cdspell autocd globstar; do
   shopt -s "$option" 2> /dev/null
 done
-
-source $(brew --prefix)/etc/bash_completion
-# Enable a fancy git prompt from brew's bash completion package
-source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
-# Enable completion-ruby
-source $HOME/.completion-ruby/completion-ruby-all
-# Enable direnv
-eval "$(direnv hook $0)"
