@@ -31,10 +31,8 @@ source $HOME/.completion-ruby/completion-ruby-all
 # Enable direnv
 eval "$(direnv hook $0)"
 
-# See http://unix.stackexchange.com/a/18443
-HISTCONTROL=ignoredups:erasedups
-shopt -s histappend
-PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
+HISTCONTROL=ignoredups
+PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 # nocaseglob: case-insensitive globbing (used in pathname expansion)
 # cdspell: autocorrect typos in path names when using cd
 # histappend: Always append to the history
