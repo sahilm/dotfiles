@@ -33,4 +33,5 @@ install go
 install direnv
 install pstree
 install tree
+install youtube-dl
 doctor
