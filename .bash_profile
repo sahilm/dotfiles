@@ -8,6 +8,7 @@ export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWCOLORHINTS=1
 # Use PROMPT_COMMAND instead of setting PS1. Only way to get a colorized prompt with git-prompt.sh
 export PROMPT_COMMAND='__git_ps1 "\w" " "'
+export ANDROID_HOME=/usr/local/opt/android-sdk
 # Set the RBENV root env var
 export RBENV_ROOT=$HOME/.rbenv
 export PATH=./bin:./node_modules/.bin:$HOME/bin:$RBENV_ROOT/bin:/usr/local/bin:$PATH
