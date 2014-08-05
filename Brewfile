@@ -34,4 +34,5 @@ install direnv
 install pstree
 install tree
 install youtube-dl
+install ctags
 doctor
