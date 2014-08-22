@@ -31,4 +31,5 @@ install pstree
 install tree
 install youtube-dl
 install ctags
+install watch
 doctor
