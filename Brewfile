@@ -15,6 +15,7 @@ install chromedriver
 install curl
 install openssl
 install git --with-blk-sha1 --with-pcre --with-brewed-curl --with-brewed-openssl --with-persistent-https
+install tig
 install maven
 install node
 install phantomjs
