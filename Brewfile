@@ -33,4 +33,5 @@ install tree
 install youtube-dl
 install ctags
 install watch
+install ack
 doctor

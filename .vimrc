@@ -1,12 +1,51 @@
-" Configuration file for vim
-set modelines=0		" CVE-2007-2438
+set nocompatible
+filetype off
+set rtp+=$HOME/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-" Normally we use vim-extensions. If you want true vi-compatibility
-" remove change the following statements
-set nocompatible	" Use Vim defaults instead of 100% vi compatibility
-set backspace=2		" more powerful backspacing
+Plugin 'gmarik/Vundle.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-rails'
+Plugin 'mileszs/ack.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'godlygeek/tabular'
+Plugin 'tpope/vim-repeat'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-haml'
+call vundle#end()
 
-" Don't write backup file if vim is being called by "crontab -e"
-au BufWrite /private/tmp/crontab.* set nowritebackup
-" Don't write backup file if vim is being called by "chpass"
-au BufWrite /private/etc/pw.* set nowritebackup
+set laststatus=2
+let g:airline_powerline_fonts = 1
+set noshowmode
+set t_Co=256
+filetype plugin indent on
+filetype on
+syntax enable
+set background=dark
+colorscheme solarized
+
+set expandtab
+set wildmode=longest,list
+set noerrorbells
+set novisualbell
+set t_vb=
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set autoindent
+set nobackup
+set nowritebackup
+
+autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
+autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
+autocmd BufNewFile,BufRead Vagrantfile,Rakefile setfiletype ruby
+
+set incsearch
+set ignorecase
+set hlsearch
+set bs=2
