@@ -5,7 +5,7 @@ function git_sync() {
   local repo="$1"
   local dir="$2"
   if [[ -d $dir ]]; then
-    cd $dir && git pull
+    (cd $dir && git pull)
   else
     mkdir -p $dir
     git clone $repo $dir
@@ -32,11 +32,17 @@ function install_rbenv() {
   git_sync "https://github.com/sstephenson/rbenv-gem-rehash/" $rbenv_plugins/rbenv-gem-rehash
 }
 
+function setup_vim() {
+  mkdir -p $HOME/.vim
+  git_sync "https://github.com/gmarik/Vundle.vim.git" $HOME/.vim/bundle/Vundle.vim
+  (vim +PluginInstall +qall &> /dev/null) &
+}
 
 mkdir -p $HOME/bin
 find $PWD -name '.[^.DS_Store]*' -type f -depth 1 | xargs -I % ln -sfv % $HOME
 ln -sfv $PWD/.cabal/* $HOME/.cabal
 
+setup_vim
 if [[ -z "$NOBREW" ]]; then
   install_brew
 fi
