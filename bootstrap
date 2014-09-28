@@ -35,7 +35,7 @@ function install_rbenv() {
 function setup_vim() {
   mkdir -p $HOME/.vim
   git_sync "https://github.com/gmarik/Vundle.vim.git" $HOME/.vim/bundle/Vundle.vim
-  (vim +PluginInstall +qall &> /dev/null) &
+  (vim +PluginUpdate +qall &> /dev/null) &
 }
 
 mkdir -p $HOME/bin
