@@ -12,6 +12,7 @@ export PROMPT_COMMAND='__git_ps1 "\w" " "'
 export RBENV_ROOT=$HOME/.rbenv
 export PATH="./bin:./node_modules/.bin:$HOME/bin:$HOME/Library/Haskell/bin:$RBENV_ROOT/bin:/usr/local/bin:$PATH"
 export PAGER=less
+export EDITOR=vim
 # Enable rbenv
 eval "$(rbenv init -)"
 export LC_ALL=en_US.UTF-8
