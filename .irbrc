@@ -1,4 +1,5 @@
 require 'rubygems'
+require 'interactive_editor'
 require 'irb/completion'
 IRB.conf[:PROMPT_MODE] = :SIMPLE
 IRB.conf[:EVAL_HISTORY] = 100000

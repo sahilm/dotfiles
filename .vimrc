@@ -44,6 +44,11 @@ set nowritebackup
 autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
 autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
 autocmd BufNewFile,BufRead Vagrantfile,Rakefile setfiletype ruby
+" Restore cursor position
+autocmd BufReadPost *
+  \ if line("'\"") > 1 && line("'\"") <= line("$") |
+  \   exe "normal! g`\"" |
+  \ endif
 
 set incsearch
 set ignorecase
