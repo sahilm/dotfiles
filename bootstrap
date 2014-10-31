@@ -34,7 +34,6 @@ function install_rbenv() {
 
 function install_ruby() {
   bash -c '
-    set -e
     source $HOME/.bash_profile
     rbenv install 2.1.4 --keep --verbose --skip-existing
     rbenv global 2.1.4
