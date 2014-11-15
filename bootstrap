@@ -35,8 +35,8 @@ function install_rbenv() {
 function install_ruby() {
   bash -c '
     source $HOME/.bash_profile
-    rbenv install 2.1.4 --keep --verbose --skip-existing
-    rbenv global 2.1.4
+    rbenv install 2.1.5 --keep --verbose --skip-existing
+    rbenv global 2.1.5
     if ! gem list interactive_editor | grep -q interactive_editor; then
       gem install interactive_editor
     fi
