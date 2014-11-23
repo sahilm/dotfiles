@@ -40,6 +40,9 @@ function install_ruby() {
     if ! gem list interactive_editor | grep -q interactive_editor; then
       gem install interactive_editor
     fi
+    if ! gem list bundler | grep -q bundler; then
+      gem install bundler
+    fi
     gem update --system
     gem update
     gem cleanup
