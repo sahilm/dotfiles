@@ -33,10 +33,10 @@ function install_rbenv() {
 }
 
 function install_ruby() {
-  bash -c '
+  bash -c "
     source $HOME/.bash_profile
-    rbenv install 2.1.5 --keep --verbose --skip-existing
-    rbenv global 2.1.5
+    rbenv install $1 --keep --verbose --skip-existing
+    rbenv global $1
     if ! gem list interactive_editor | grep -q interactive_editor; then
       gem install interactive_editor
     fi
@@ -46,7 +46,7 @@ function install_ruby() {
     gem update --system
     gem update
     gem cleanup
-  '
+  "
 }
 
 function setup_vim() {
@@ -67,7 +67,8 @@ fi
 
 if [[ -z "$NORBENV" ]]; then
   install_rbenv
-  install_ruby
+  install_ruby "2.1.5"
+  install_ruby "2.2.0"
 fi
 
 echo 'Bootstrap complete'
