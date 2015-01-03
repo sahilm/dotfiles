@@ -23,6 +23,11 @@ alias ls='ls -G'
 alias ll='ls -laG'
 alias l='ll'
 alias la='ll'
+function serve() {
+  local port=${1:-9000}
+  ruby -run -e httpd . -p $port
+}
+alias serve=serve
 source $(brew --prefix)/etc/bash_completion
 # Enable a fancy git prompt from brew's bash completion package
 source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
