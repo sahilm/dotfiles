@@ -14,7 +14,7 @@ brew install bash-completion
 brew install chromedriver
 brew install curl
 brew install openssl
-brew install git --with-blk-sha1 --with-pcre --with-brewed-curl --with-brewed-openssl --with-persistent-https
+brew install git --with-blk-sha1 --with-pcre --with-brewed-curl --with-brewed-openssl
 brew install tig
 brew install maven
 brew install node
