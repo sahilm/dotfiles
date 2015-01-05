@@ -22,7 +22,3 @@
   lo=log --graph --abbrev-commit --date=relative master..origin/master
 [format]
   pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
-[url "persistent-https"]
-  insteadof=https
-[url "persistent-http"]
-  insteadof=http
