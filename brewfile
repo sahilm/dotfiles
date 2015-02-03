@@ -37,8 +37,6 @@ brew install gcc
 
 brew install file-formula
 brew install less
-brew install openssh --with-brewed-openssl
-brew install perl518
 brew install python --with-brewed-openssl
 brew install rsync
 brew install svn
