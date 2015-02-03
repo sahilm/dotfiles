@@ -26,10 +26,10 @@ function install_brew() {
 
 function install_rbenv() {
   local rbenv_root=$HOME/.rbenv
-  git_sync "https://github.com/sstephenson/rbenv/" $rbenv_root
+  git_sync "git@github.com:sstephenson/rbenv/" $rbenv_root
   local rbenv_plugins=$rbenv_root/plugins
-  git_sync "https://github.com/sstephenson/ruby-build/" $rbenv_plugins/ruby-build
-  git_sync "https://github.com/sstephenson/rbenv-gem-rehash/" $rbenv_plugins/rbenv-gem-rehash
+  git_sync "git@github.com:sstephenson/ruby-build/" $rbenv_plugins/ruby-build
+  git_sync "git@github.com:sstephenson/rbenv-gem-rehash/" $rbenv_plugins/rbenv-gem-rehash
 }
 
 function install_ruby() {
@@ -51,7 +51,7 @@ function install_ruby() {
 
 function setup_vim() {
   mkdir -p $HOME/.vim
-  git_sync "https://github.com/gmarik/Vundle.vim.git" $HOME/.vim/bundle/Vundle.vim
+  git_sync "git@github.com:gmarik/Vundle.vim.git" $HOME/.vim/bundle/Vundle.vim
   (vim +PluginUpdate +qall &> /dev/null) &
 }
 
