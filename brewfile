@@ -32,6 +32,7 @@ brew install gpatch
 brew install m4
 brew install make
 brew install bash
+brew install gcc
 # end gnu toolchain
 
 brew install file-formula
