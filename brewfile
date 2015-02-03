@@ -38,10 +38,7 @@ brew install gcc
 brew install file-formula
 brew install less
 brew install python --with-brewed-openssl
-brew install rsync
-brew install svn
-brew install unzip
-
+brew install splint
 brew install vim --override-system-vi
 brew install tmux
 brew install axel
