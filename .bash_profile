@@ -10,7 +10,7 @@ export GIT_PS1_SHOWCOLORHINTS=1
 export PROMPT_COMMAND='__git_ps1 "\w" " "'
 # Set the RBENV root env var
 export RBENV_ROOT=$HOME/.rbenv
-export PATH="$HOME/bin:./bin:./node_modules/.bin:$HOME/Library/Haskell/bin:$PATH"
+export PATH="$HOME/bin:./bin:./node_modules/.bin:$HOME/Library/Haskell/bin:$RBENV_ROOT/bin:$PATH"
 export PAGER=less
 export EDITOR=vim
 # Enable rbenv
