@@ -16,6 +16,7 @@ brew install axel
 brew install bash
 brew install bash-completion
 brew install chromedriver
+brew install cmake
 brew install cloc
 brew install cppcheck
 brew install cscope
