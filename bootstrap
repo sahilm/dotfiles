@@ -13,7 +13,7 @@ function git_sync() {
 }
 
 function install_brew() {
-  which brew &> /dev/null || ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+  which brew &> /dev/null || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   source ./brewfile
   local brew_bash="$(brew --prefix)/bin/bash"
   if ! grep -q $brew_bash /etc/shells; then
