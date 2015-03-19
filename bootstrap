@@ -52,7 +52,7 @@ function install_ruby() {
 function install_node_modules() {
  bash -c "
     source $HOME/.bash_profile
-    npm install -g jshint jsxhint csslint
+    npm install -g jshint jsxhint csslint scsslint
   "
 }
 
