@@ -75,7 +75,7 @@ fi
 if [[ -z "$NORBENV" ]]; then
   install_rbenv
   install_ruby "2.1.5"
-  install_ruby "2.2.0"
+  install_ruby "2.2.1"
 fi
 
 install_node_modules
