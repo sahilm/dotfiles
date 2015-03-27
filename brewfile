@@ -42,6 +42,7 @@ brew install vim --override-system-vi
 brew install ack
 brew install leiningen
 brew install emacs
+brew install jq
 
 brew cleanup
 brew doctor
