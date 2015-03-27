@@ -17,10 +17,10 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-commentary'
 call vundle#end()
 
 set laststatus=2
-let g:airline_powerline_fonts = 1
 set noshowmode
 set t_Co=256
 filetype plugin indent on
