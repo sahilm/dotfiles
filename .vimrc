@@ -6,26 +6,22 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-rails'
 Plugin 'pangloss/vim-javascript'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-commentary'
+Plugin 'kana/vim-textobj-entire'
+Plugin 'kana/vim-textobj-user'
 call vundle#end()
 
-set laststatus=2
-set noshowmode
-filetype plugin indent on
 filetype on
 syntax enable
 set background=dark
 colorscheme solarized
 
 set expandtab
-set noerrorbells
-set novisualbell
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
@@ -41,3 +37,4 @@ set incsearch
 set ignorecase
 set hlsearch
 set backspace=2
+set nrformats=
