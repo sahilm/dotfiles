@@ -41,3 +41,4 @@ autocmd BufNewFile,BufRead Vagrantfile,Rakefile setfiletype ruby
 set incsearch
 set ignorecase
 set hlsearch
+set backspace=2
