@@ -17,7 +17,6 @@ call vundle#end()
 
 set laststatus=2
 set noshowmode
-set t_Co=256
 filetype plugin indent on
 filetype on
 syntax enable
