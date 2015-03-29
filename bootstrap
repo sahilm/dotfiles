@@ -59,7 +59,7 @@ function install_node_modules() {
 function setup_vim() {
   mkdir -p $HOME/.vim
   git_sync "git@github.com:gmarik/Vundle.vim.git" $HOME/.vim/bundle/Vundle.vim
-  (vim +PluginUpdate +qall &> /dev/null) &
+  (vim +PluginClean +PluginInstall +PluginUpdate +qall &> /dev/null)
 }
 
 mkdir -p $HOME/bin
