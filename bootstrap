@@ -78,6 +78,6 @@ if [[ -z "$NORBENV" ]]; then
   install_ruby "2.2.1"
 fi
 
-install_node_modules
+# install_node_modules
 
 echo 'Bootstrap complete'
