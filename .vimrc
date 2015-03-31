@@ -12,6 +12,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-haml'
 Plugin 'kana/vim-textobj-entire'
 Plugin 'kana/vim-textobj-user'
 call vundle#end()
