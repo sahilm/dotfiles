@@ -16,6 +16,7 @@ Plugin 'kana/vim-textobj-entire'
 Plugin 'kana/vim-textobj-user'
 call vundle#end()
 
+filetype plugin indent on
 filetype on
 syntax enable
 set background=dark
