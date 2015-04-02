@@ -30,6 +30,7 @@ set softtabstop=2
 set autoindent
 set nobackup
 set nowritebackup
+set dir=~/.vim/tmp
 
 autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
 autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
