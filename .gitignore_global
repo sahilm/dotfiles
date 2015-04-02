@@ -5,3 +5,4 @@
 /.bundle
 /node_modules
 .tags*
+*.swp
