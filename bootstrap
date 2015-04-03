@@ -78,7 +78,7 @@ if [[ -z "$NOBREW" ]]; then
   install_brew
 fi
 
-f [[ -z "$NORBENV" ]]; then
+if [[ -z "$NORBENV" ]]; then
   install_rbenv
   install_ruby "2.1.5"
   install_ruby "2.2.1"
