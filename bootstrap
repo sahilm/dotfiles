@@ -49,19 +49,6 @@ function install_ruby() {
   "
 }
 
-function install_node_modules() {
- bash -c "
-    source $HOME/.bash_profile
-    installed_modules=$(npm -g ls --depth=0 --parseable)
-    echo "$installed_modules" | grep -q jshint || npm install -g jshint
-    echo "$installed_modules" | grep -q jsxhint || npm install -g jsxhint
-    echo "$installed_modules" | grep -q csslint || npm install -g csslint
-    echo "$installed_modules" | grep -q scsslint || npm install -g scsslint
-    echo "$installed_modules" | grep -q bower || npm install -g bower
-    echo "$installed_modules" | grep -q npm-check-updates || npm install -g npm-check-updates
-  "
-}
-
 function setup_vim() {
   mkdir -p $HOME/.vim/tmp
   git_sync "git@github.com:gmarik/Vundle.vim.git" $HOME/.vim/bundle/Vundle.vim
@@ -83,7 +70,5 @@ if [[ -z "$NORBENV" ]]; then
   install_ruby "2.1.5"
   install_ruby "2.2.1"
 fi
-
-install_node_modules
 
 echo 'Bootstrap complete'
