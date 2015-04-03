@@ -23,6 +23,7 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+set clipboard=unnamed
 set expandtab
 set tabstop=2
 set shiftwidth=2
