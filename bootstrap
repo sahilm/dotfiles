@@ -52,7 +52,13 @@ function install_ruby() {
 function install_node_modules() {
  bash -c "
     source $HOME/.bash_profile
-    npm install -g jshint jsxhint csslint scsslint
+    installed_modules=$(npm -g ls --depth=0 --parseable)
+    echo "$installed_modules" | grep -q jshint || npm install -g jshint
+    echo "$installed_modules" | grep -q jsxhint || npm install -g jsxhint
+    echo "$installed_modules" | grep -q csslint || npm install -g csslint
+    echo "$installed_modules" | grep -q scsslint || npm install -g scsslint
+    echo "$installed_modules" | grep -q bower || npm install -g bower
+    echo "$installed_modules" | grep -q npm-check-updates || npm install -g npm-check-updates
   "
 }
 
@@ -72,12 +78,12 @@ if [[ -z "$NOBREW" ]]; then
   install_brew
 fi
 
-if [[ -z "$NORBENV" ]]; then
+f [[ -z "$NORBENV" ]]; then
   install_rbenv
   install_ruby "2.1.5"
   install_ruby "2.2.1"
 fi
 
-# install_node_modules
+install_node_modules
 
 echo 'Bootstrap complete'
