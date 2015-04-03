@@ -42,5 +42,4 @@ set hlsearch
 set backspace=2
 set nrformats=
 
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)|vendor$'
-
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
