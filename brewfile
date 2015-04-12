@@ -43,6 +43,7 @@ brew install leiningen
 brew install emacs
 brew install jq
 brew install icu4c
+brew install python
 
 brew cleanup
 brew doctor
