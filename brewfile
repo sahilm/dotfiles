@@ -3,7 +3,7 @@
 set -e
 
 brew update
-brew upgrade
+brew upgrade --all
 brew linkapps
 brew tap homebrew/binary
 brew tap homebrew/completions
