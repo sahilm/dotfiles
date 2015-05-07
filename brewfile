@@ -44,6 +44,7 @@ brew install emacs
 brew install jq
 brew install icu4c
 brew install python
+brew install awscli
 
 brew cleanup
 brew doctor
