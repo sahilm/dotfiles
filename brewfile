@@ -47,6 +47,7 @@ brew install python
 brew install awscli
 brew install libxml2
 brew install libxslt
+# brew install imagemagick --with-librsvg --with-webp
 
 brew cleanup
 brew doctor
