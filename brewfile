@@ -48,6 +48,8 @@ brew install awscli
 brew install libxml2
 brew install libxslt
 # brew install imagemagick --with-librsvg --with-webp
+brew install nmap
+brew install mtr
 
 brew cleanup
 brew doctor
