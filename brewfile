@@ -50,6 +50,7 @@ brew install libxslt
 # brew install imagemagick --with-librsvg --with-webp
 brew install nmap
 brew install mtr
+brew install ansible
 
 brew cleanup
 brew doctor
