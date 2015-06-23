@@ -44,6 +44,7 @@ brew install emacs
 brew install jq
 brew install icu4c
 brew install python
+brew install python3
 brew install awscli
 brew install libxml2
 brew install libxslt
