@@ -1,3 +1,5 @@
+# massive history
+export HISTSIZE=9999
 # Show unstaged(*) and staged(+) changes
 export GIT_PS1_SHOWDIRTYSTATE=1
 # Show stashes($)
