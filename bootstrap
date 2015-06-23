@@ -58,6 +58,8 @@ function setup_vim() {
 mkdir -p $HOME/bin
 find $PWD -name '.[^.DS_Store]*' -type f -depth 1 | xargs -I % ln -sfv % $HOME
 ln -sfv $PWD/.cabal/* $HOME/.cabal
+mkdir -p $HOME/.ssh
+ln -sfv $PWD/.ssh/config $HOME/.ssh/config
 
 setup_vim
 
