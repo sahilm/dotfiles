@@ -25,6 +25,7 @@ brew install curl
 brew install direnv
 brew install gcc
 brew install git --with-blk-sha1 --with-pcre --with-brewed-curl --with-brewed-openssl
+brew install hg
 brew install go
 brew install maven
 brew install openssl
