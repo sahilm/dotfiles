@@ -53,6 +53,7 @@ brew install libxslt
 brew install nmap
 brew install mtr
 brew install ansible
+brew install bzr
 
 brew cleanup
 brew doctor
