@@ -33,5 +33,7 @@ alias serve=serve
 source $(brew --prefix)/etc/bash_completion
 # Enable a fancy git prompt from brew's bash completion package
 source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
+# aws completion
+complete -C '/usr/local/bin/aws_completer' aws
 # Enable direnv
 eval "$(direnv hook $0)"
