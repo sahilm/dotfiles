@@ -54,6 +54,7 @@ brew install nmap
 brew install mtr
 brew install ansible
 brew install bzr
+brew install flow
 
 brew cleanup
 brew doctor
