@@ -55,6 +55,7 @@ brew install mtr
 brew install ansible
 brew install bzr
 brew install flow
+brew install nvm
 
 brew cleanup
 brew doctor
