@@ -55,6 +55,11 @@ function setup_vim() {
   (vim +PluginClean +PluginInstall +PluginUpdate +qall &> /dev/null)&
 }
 
+function setup_nvm() {
+  mkdir -p $HOME/.nvm
+  cp $(brew --prefix nvm)/nvm-exec ~/.nvm/
+}
+
 mkdir -p $HOME/bin
 find $PWD -name '.[^.DS_Store]*' -type f -depth 1 | xargs -I % ln -sfv % $HOME
 ln -sfv $PWD/.cabal/* $HOME/.cabal
@@ -71,5 +76,7 @@ if [[ -z "$NORBENV" ]]; then
   install_rbenv
   install_ruby "2.2.2"
 fi
+
+setup_nvm
 
 echo 'Bootstrap complete'
