@@ -35,8 +35,5 @@ source $(brew --prefix)/etc/bash_completion
 source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
 # aws completion
 complete -C '/usr/local/bin/aws_completer' aws
-# set node version manager
-export NVM_DIR=$HOME/.nvm
-source $(brew --prefix nvm)/nvm.sh
 # Enable direnv
 eval "$(direnv hook $0)"
