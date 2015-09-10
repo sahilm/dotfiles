@@ -56,6 +56,7 @@ brew install ansible
 brew install bzr
 brew install flow
 brew install graphviz
+brew install nodejs
 
 brew cleanup
 brew doctor
