@@ -57,6 +57,7 @@ brew install bzr
 brew install flow
 brew install graphviz
 brew install nodejs
+brew install siege
 
 brew cleanup
 brew doctor
