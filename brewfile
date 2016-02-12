@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-set -e
+# set -e
 
 brew update
 brew upgrade --all
@@ -58,6 +58,7 @@ brew install flow
 brew install graphviz
 brew install nodejs
 brew install siege
+brew install packer
 
 brew cleanup
 brew doctor
