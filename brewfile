@@ -59,6 +59,7 @@ brew install graphviz
 brew install nodejs
 brew install siege
 brew install packer
+brew install rabbitmq
 
 brew cleanup
 brew doctor
