@@ -43,12 +43,6 @@ function install_ruby() {
     if ! gem list bundler | grep -q bundler; then
       gem install bundler
     fi
-    if ! gem list rubocop | grep -q rubocop; then
-      gem install rubocop
-    fi
-    if ! gem list scss_lint | grep -q scss_lint; then
-      gem install scss_lint
-    fi
     gem update --system
     gem update
     gem cleanup
@@ -80,7 +74,7 @@ fi
 
 if [[ -z "$NORBENV" ]]; then
   install_rbenv
-  install_ruby "2.2.3"
+  install_ruby "2.3.1"
 fi
 
 setup_nvm
