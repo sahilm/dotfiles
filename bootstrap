@@ -1,7 +1,9 @@
 #! /usr/bin/env bash
 set -e
 
-source ./.osx
+# Doesn't return success
+# TODO: Why?
+source ./.osx || true
 
 function git_sync() {
   local repo="$1"
