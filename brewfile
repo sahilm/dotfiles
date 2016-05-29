@@ -57,6 +57,7 @@ brew cask install spectacle
 brew cask install appcleaner
 brew cask install slack
 brew cask install steam
+brew cask install vagrant
 
 brew cleanup
 brew doctor
