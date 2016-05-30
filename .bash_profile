@@ -37,3 +37,8 @@ source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
 complete -C '/usr/local/bin/aws_completer' aws
 # Enable direnv
 eval "$(direnv hook $0)"
+# Setup Docker completion
+DOCKER_COMPLETION_FILE=`brew --prefix`/etc/bash_completion.d/docker
+if [ ! -f $DOCKER_COMPLETION_FILE ]; then
+ curl -XGET https://raw.githubusercontent.com/docker/docker/master/contrib/completion/bash/docker > $DOCKER_COMPLETION_FILE
+fi
