@@ -37,11 +37,3 @@ source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
 complete -C '/usr/local/bin/aws_completer' aws
 # Enable direnv
 eval "$(direnv hook $0)"
-# Enable docker
-DOCKER_MACHINE="default"
-if docker-machine status $DOCKER_MACHINE | grep "Running" &> /dev/null
-  then
-    eval "$(docker-machine env $DOCKER_MACHINE)"
-  else
-    docker-machine start $DOCKER_MACHINE && eval "$(docker-machine env $DOCKER_MACHINE)"
-fi
