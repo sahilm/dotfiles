@@ -1,5 +1,6 @@
-# massive history
-export HISTSIZE=9999
+# Infinite history
+# http://superuser.com/a/479727
+export HISTSIZE=""
 # Show unstaged(*) and staged(+) changes
 export GIT_PS1_SHOWDIRTYSTATE=1
 # Show stashes($)
