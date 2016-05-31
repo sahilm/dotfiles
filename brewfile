@@ -61,6 +61,7 @@ brew cask install slack
 brew cask install steam
 brew cask install vagrant
 brew cask install dockertoolbox
+brew cask install firefox
 
 brew cleanup
 brew doctor
