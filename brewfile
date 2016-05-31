@@ -43,6 +43,8 @@ brew install ansible
 brew install graphviz
 brew install nodejs
 brew install packer
+brew install docker-completion
+brew install docker-compose-completion
 
 brew cask install dropbox
 brew cask install 1password
