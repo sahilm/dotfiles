@@ -53,12 +53,6 @@ function install_ruby() {
   "
 }
 
-function setup_vim() {
-  mkdir -p $HOME/.vim/tmp
-  git_sync "https://github.com/gmarik/Vundle.vim.git" $HOME/.vim/bundle/Vundle.vim
-  (vim +PluginClean +PluginInstall +PluginUpdate +qall &> /dev/null)&
-}
-
 function setup_nvm() {
   mkdir -p $HOME/.nvm
   cp $(brew --prefix nvm)/nvm-exec ~/.nvm/
@@ -69,8 +63,6 @@ find $PWD -name '.[^.DS_Store]*' -type f -depth 1 | xargs -I % ln -sfv % $HOME
 ln -sfv $PWD/.cabal/* $HOME/.cabal
 mkdir -p $HOME/.ssh
 ln -sfv $PWD/.ssh/config $HOME/.ssh/config
-
-setup_vim
 
 if [[ -z "$NOBREW" ]]; then
   install_brew
