@@ -24,6 +24,7 @@ brew install git --with-blk-sha1 --with-pcre --with-brewed-curl --with-brewed-op
 brew install hg
 brew install go
 brew install maven
+brew install gradle
 brew install openssl
 brew install postgresql
 brew install pstree
