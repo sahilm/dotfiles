@@ -22,6 +22,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 # Set the latest Java as the JAVA_HOME
 export JAVA_HOME=$(/usr/libexec/java_home)
+export GROOVY_HOME=/usr/local/opt/groovy/libexec
 alias ls='ls -G'
 alias ll='ls -laG'
 alias l='ll'
