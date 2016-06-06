@@ -39,3 +39,5 @@ source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
 complete -C '/usr/local/bin/aws_completer' aws
 # Enable direnv
 eval "$(direnv hook $0)"
+# Set GOPATH
+export GOPATH=~/src/golang
