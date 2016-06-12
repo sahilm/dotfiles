@@ -46,6 +46,7 @@ brew install nodejs
 brew install packer
 brew install docker-completion
 brew install docker-compose-completion
+brew install leiningen
 
 brew cask install dropbox
 brew cask install 1password
