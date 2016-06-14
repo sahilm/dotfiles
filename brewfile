@@ -66,4 +66,5 @@ brew cask install vagrant
 brew cask install firefox
 
 brew cleanup
+brew cask cleanup
 brew doctor
