@@ -53,16 +53,16 @@ function install_ruby() {
   "
 }
 
-function setup_nvm() {
-  mkdir -p $HOME/.nvm
-  cp $(brew --prefix nvm)/nvm-exec ~/.nvm/
-}
 
 mkdir -p $HOME/bin
 find $PWD -name '.[^.DS_Store]*' -type f -depth 1 | xargs -I % ln -sfv % $HOME
 ln -sfv $PWD/.cabal/* $HOME/.cabal
 mkdir -p $HOME/.ssh
 ln -sfv $PWD/.ssh/config $HOME/.ssh/config
+
+if [ ! -f /bin/diff-highlight ]; then
+   curl https://raw.githubusercontent.com/git/git/master/contrib/diff-highlight/diff-highlight > ~/bin/diff-highlight && chmod +x ~/bin/diff-highlight 
+fi
 
 if [[ -z "$NOBREW" ]]; then
   install_brew
