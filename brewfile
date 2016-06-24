@@ -47,13 +47,14 @@ brew install packer
 brew install docker-completion
 brew install docker-compose-completion
 brew install leiningen
+brew install groovy
+brew install kubernetes-cli
 
 brew cask install dropbox
 brew cask install intellij-idea
 brew cask install google-chrome
 brew cask install google-drive
 brew cask install java
-brew install groovy
 brew cask install dropbox
 brew cask install iterm2
 brew cask install keepingyouawake
