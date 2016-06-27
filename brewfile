@@ -66,6 +66,7 @@ brew cask install vagrant
 brew cask install firefox
 brew cask install chefdk
 brew cask install emacs
+brew cask install dockertoolbox
 
 brew cleanup
 brew cask cleanup
