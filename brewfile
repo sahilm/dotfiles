@@ -46,6 +46,7 @@ brew install nodejs
 brew install packer
 brew install docker-completion
 brew install docker-compose-completion
+brew install docker-machine-completion
 brew install leiningen
 brew install groovy
 brew install kubernetes-cli
