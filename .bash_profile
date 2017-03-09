@@ -41,3 +41,5 @@ complete -C '/usr/local/bin/aws_completer' aws
 eval "$(direnv hook $0)"
 # Set GOPATH
 export GOPATH=~/src/golang
+# docker-machine
+eval $(docker-machine env default)
