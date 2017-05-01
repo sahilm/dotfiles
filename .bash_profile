@@ -42,4 +42,6 @@ eval "$(direnv hook $0)"
 # Set GOPATH
 export GOPATH=~/src/golang
 # docker-machine
-eval $(docker-machine env default)
+if docker-machine status | grep -q 'Running'; then
+  eval $(docker-machine env default)
+fi
