@@ -70,7 +70,7 @@ fi
 
 if [[ -z "$NORBENV" ]]; then
   install_rbenv
-  install_ruby "2.4"
+  install_ruby "2.4.1"
 fi
 
 echo 'Bootstrap complete'
