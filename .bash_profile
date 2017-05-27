@@ -13,7 +13,9 @@ export GIT_PS1_SHOWCOLORHINTS=1
 export PROMPT_COMMAND='__git_ps1 "\w" " "'
 # Set the RBENV root env var
 export RBENV_ROOT=$HOME/.rbenv
-export PATH="$HOME/bin:./bin:./node_modules/.bin:$HOME/Library/Haskell/bin:$RBENV_ROOT/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+# Set GOPATH
+export GOPATH=~/src/golang
+export PATH="$HOME/bin:./bin:./node_modules/.bin:$HOME/Library/Haskell/bin:$RBENV_ROOT/bin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin:$PATH"
 export PAGER=less
 export EDITOR=vim
 # Enable rbenv
@@ -39,8 +41,6 @@ source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
 complete -C '/usr/local/bin/aws_completer' aws
 # Enable direnv
 eval "$(direnv hook $0)"
-# Set GOPATH
-export GOPATH=~/src/golang
 # docker-machine
 if docker-machine status | grep -q 'Running'; then
   eval $(docker-machine env default)
