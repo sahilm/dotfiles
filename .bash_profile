@@ -29,6 +29,7 @@ alias ls='ls -G'
 alias ll='ls -laG'
 alias l='ll'
 alias la='ll'
+alias mygo="cd $GOPATH/src/github.com/sahilm"
 function serve() {
   local port=${1:-9000}
   ruby -run -e httpd . -p $port
