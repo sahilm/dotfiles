@@ -46,3 +46,5 @@ eval "$(direnv hook $0)"
 if docker-machine status | grep -q 'Running'; then
   eval $(docker-machine env default)
 fi
+# Set tab width to 4
+tabs -4
