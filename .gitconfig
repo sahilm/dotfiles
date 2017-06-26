@@ -27,6 +27,6 @@
 [diff]
 	compactionHeuristic = true
 [pager]
-  log = diff-highlight | less -x1,5
-  show = diff-highlight | less -x1,5
-  diff = diff-highlight | less -x1,5
+  log = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less -x1,5
+  show = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less -x1,5
+  diff = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less -x1,5

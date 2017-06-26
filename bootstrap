@@ -60,10 +60,6 @@ ln -sfv $PWD/.cabal/* $HOME/.cabal
 mkdir -p $HOME/.ssh
 ln -sfv $PWD/.ssh/config $HOME/.ssh/config
 
-if [ ! -f /bin/diff-highlight ]; then
-   curl https://raw.githubusercontent.com/git/git/master/contrib/diff-highlight/diff-highlight > ~/bin/diff-highlight && chmod +x ~/bin/diff-highlight 
-fi
-
 if [[ -z "$NOBREW" ]]; then
   install_brew
 fi
