@@ -1,80 +1,65 @@
-#! /usr/bin/env bash
+tap 'caskroom/cask'
+tap 'homebrew/completions'
 
-# set -e
+cask 'dropbox'
+cask 'intellij-idea'
+cask 'google-chrome'
+cask 'google-drive'
+cask 'java'
+cask 'iterm2'
+cask 'keepingyouawake'
+cask 'spectacle'
+cask 'appcleaner'
+cask 'slack'
+cask 'vagrant'
+cask 'firefox'
+cask 'virtualbox'
+cask '1Password'
+cask 'google-cloud-sdk'
 
-brew update
-brew upgrade --all
-brew linkapps
-brew tap homebrew/binary
-brew tap homebrew/completions
-brew tap homebrew/dupes
-brew tap homebrew/versions
-brew tap caskroom/cask
-
-
-brew install ant
-brew install aria2
-brew install bash
-brew install bash-completion
-brew install ctags
-brew install curl
-brew install direnv
-brew install gcc
-brew install git --with-blk-sha1 --with-pcre --with-brewed-curl --with-brewed-openssl
-brew install hg
-brew install go
-brew install maven
-brew install gradle
-brew install openssl
-brew install postgresql
-brew install pstree
-brew install sqlite
-brew install tig
-brew install tmux
-brew install tree
-brew install unrar
-brew install vim --override-system-vi
-brew install jq
-brew install awscli
-brew install libxml2
-brew install libxslt
-brew install nmap
-brew install mtr
-brew install ansible
-brew install graphviz
-brew install nodejs
-brew install packer
-brew install docker-completion
-brew install docker-compose-completion
-brew install docker-machine-completion
-brew install leiningen
-brew install groovy
-brew install kubernetes-cli
-brew install coreutils
-brew install findutils
-brew install gawk
-brew install gnu-sed
-brew install grep
-brew install watch
-brew install docker-machine-nfs
-brew install redis
-
-
-brew cask install dropbox
-brew cask install intellij-idea
-brew cask install google-chrome
-brew cask install google-drive
-brew cask install java
-brew cask install dropbox
-brew cask install iterm2
-brew cask install keepingyouawake
-brew cask install spectacle
-brew cask install appcleaner
-brew cask install slack
-brew cask install steam
-brew cask install vagrant
-brew cask install firefox
-
-brew cleanup
-brew cask cleanup
-brew doctor
+brew 'ant'
+brew 'aria2'
+brew 'bash'
+brew 'bash-completion'
+brew 'ctags'
+brew 'curl'
+brew 'direnv'
+brew 'gcc'
+brew 'git', args: %w(with-blk-sha1 with-pcre with-brewed-curl with-brewed-openssl)
+brew 'go'
+brew 'maven'
+brew 'gradle'
+brew 'openssl'
+brew 'postgresql'
+brew 'pstree'
+brew 'sqlite'
+brew 'tig'
+brew 'tmux'
+brew 'tree'
+brew 'unrar'
+brew 'vim', args: ['override-system-vi']
+brew 'jq'
+brew 'awscli'
+brew 'libxml2'
+brew 'libxslt'
+brew 'nmap'
+brew 'mtr'
+brew 'ansible'
+brew 'ansible'
+brew 'graphviz'
+brew 'nodejs'
+brew 'packer'
+brew 'docker'
+brew 'docker-compose'
+brew 'docker-machine-nfs'
+brew 'docker-machine'
+brew 'leiningen'
+brew 'coreutils'
+brew 'findutils'
+brew 'gawk'
+brew 'gnu-sed'
+brew 'grep'
+brew 'watch'
+brew 'redis'
+brew 'rbenv'
+brew 'rbenv-default-gems'
