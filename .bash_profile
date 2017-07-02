@@ -60,3 +60,5 @@ if docker-machine status | grep -q 'Running'; then
 fi
 # Set tab width to 4
 tabs -4
+
+. /usr/local/etc/profile.d/autojump.sh
