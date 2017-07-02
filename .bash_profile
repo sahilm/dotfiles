@@ -19,7 +19,7 @@ export PATH="$HOME/bin:./bin:./node_modules/.bin:$HOME/Library/Haskell/bin:$RBEN
 export PAGER=less
 export EDITOR=vim
 # Enable rbenv
-eval "$(rbenvinit-)"
+eval "$(rbenv init -)"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 # Set the latest Java as the JAVA_HOME
@@ -53,10 +53,10 @@ complete -C '/usr/local/bin/aws_completer' aws
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
 # Enable direnv
-eval "$(direnvhook$0)"
+eval "$(direnv hook $0)"
 # docker-machine
 if docker-machine status | grep -q 'Running'; then
-    eval $ (docker-machine env default)
+    eval $(docker-machine env default)
 fi
 # Set tab width to 4
 tabs -4
