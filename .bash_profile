@@ -60,3 +60,6 @@ if docker-machine status | grep -q 'Running'; then
 fi
 # Set tab width to 4
 tabs -4
+
+# setup fasd
+eval "$(fasd --init auto)"
