@@ -29,6 +29,7 @@ alias ls='ls -G'
 alias ll='ls -laG'
 alias l='ll'
 alias la='ll'
+alias cdgo="cd $GOPATH"
 alias mygo="cd $GOPATH/src/github.com/sahilm"
 function serve() {
   local port=${1:-9000}
@@ -40,6 +41,9 @@ source $(brew --prefix)/etc/bash_completion
 source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
 # aws completion
 complete -C '/usr/local/bin/aws_completer' aws
+# gcloud completion
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
 # Enable direnv
 eval "$(direnv hook $0)"
 # docker-machine
