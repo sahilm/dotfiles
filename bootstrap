@@ -8,7 +8,7 @@ DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 function install_brew() {
     which brew &>/dev/null || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew tap Homebrew/bundle
-    brew bundle
+    brew bundle --file=$DIR/Brewfile
     local brew_bash="$(brew --prefix)/bin/bash"
     if ! grep -q ${brew_bash} /etc/shells; then
         sudo bash -c "echo $brew_bash >> /etc/shells"
@@ -22,16 +22,16 @@ function install_brew() {
 }
 
 mkdir -p $HOME/bin
-find ${DIR} -name '.[^.DS_Store]*' -type f -depth 1 | xargs -I % ln -sf % $HOME
+find ${DIR} -name '.[^.DS_Store]*' -type f -depth 1 | xargs -I % ln -sfv % $HOME
 mkdir -p $HOME/.ssh
-ln -sf ${DIR}/.ssh/config $HOME/.ssh/config
-ln -sf ${DIR}/default-gems $(rbenv root)/default-gems
+ln -sfv ${DIR}/.ssh/config $HOME/.ssh/config
+ln -sfv ${DIR}/default-gems $(rbenv root)/default-gems
 
 install_brew
 
 chmod 0400 $HOME/Dropbox/creds/.ssh/id_rsa
-ln -sf $HOME/Dropbox/creds/.ssh/id_rsa $HOME/.ssh/id_rsa
-ln -sf $HOME/Dropbox/.bash_history $HOME/.bash_history
+ln -sfv $HOME/Dropbox/creds/.ssh/id_rsa $HOME/.ssh/id_rsa
+ln -sfv $HOME/Dropbox/.bash_history $HOME/.bash_history
 
 (docker-machine ls | grep -q default) || docker-machine create default --driver virtualbox
 
