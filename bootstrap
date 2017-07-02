@@ -31,6 +31,8 @@ install_brew
 
 (docker-machine ls | grep -q default) || docker-machine create default --driver virtualbox
 
+docker-machine-nfs default
+
 RUBY_VERSION="2.4.1"
 if ! rbenv versions --bare | grep -q ${RUBY_VERSION}; then
     rbenv install ${RUBY_VERSION} --keep
