@@ -45,3 +45,5 @@ fi
 gem update --system
 gem update
 gem cleanup
+
+pip install --upgrade pip setuptools glances bottle
