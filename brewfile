@@ -36,6 +36,7 @@ brew "lastpass-cli"
 brew "leiningen"
 brew "libxml2"
 brew "libxslt"
+brew "mas"
 brew "maven"
 brew "mtr"
 brew "nmap"
@@ -71,3 +72,7 @@ cask "spectacle"
 cask "transmission"
 cask "vagrant"
 cask "virtualbox"
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Simple Desktops", id: 460866217
