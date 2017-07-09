@@ -37,7 +37,9 @@ ln -sfv $HOME/Dropbox/.bash_history $HOME/.bash_history
 
 (docker-machine ls | grep -q default) || docker-machine create default --driver virtualbox
 
-docker-machine-nfs default
+if docker-machine status | grep -q 'Running'; then
+    docker-machine-nfs default
+fi
 
 RUBY_VERSION="2.4.1"
 if ! rbenv versions --bare | grep -q ${RUBY_VERSION}; then
