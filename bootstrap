@@ -11,6 +11,7 @@ function install_brew() {
     brew bundle --file=$DIR/Brewfile
     brew upgrade
     brew cask outdated -q | xargs -I % brew cask reinstall %
+    mas upgrade
     local brew_bash="$(brew --prefix)/bin/bash"
     if ! grep -q ${brew_bash} /etc/shells; then
         sudo bash -c "echo $brew_bash >> /etc/shells"
