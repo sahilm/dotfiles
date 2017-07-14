@@ -1,3 +1,7 @@
+# When the shell exits, append to the history file instead of overwriting it
+shopt -s histappend
+# Remove dupes from history
+export HISTCONTROL=ignoredups:erasedups
 # Infinite history
 # http://superuser.com/a/479727
 export HISTSIZE=""
