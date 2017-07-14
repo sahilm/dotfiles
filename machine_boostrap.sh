@@ -72,4 +72,5 @@ mkdir -p $HOME/src
 mkdir -p ${GOPATH}
 
 # Update the npms
+npm i npm -g
 npm update -g
