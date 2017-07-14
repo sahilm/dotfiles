@@ -1,32 +1,53 @@
 [user]
-  name=Sahil Muthoo
-  email=sahil.muthoo@gmail.com
-[color]
-  ui=auto
+    name=Sahil Muthoo
+    email=sahil.muthoo@gmail.com
+
 [credential]
-  helper=osxkeychain
+    helper=osxkeychain
+
+[color]
+    ui=auto
+
 [push]
-  default=simple
+    default=simple
+
 [core]
-  editor=vim
-  whitespace=trailing-space,space-before-tab
-  excludesfile=~/.gitignore_global
+    editor=vim
+    whitespace=trailing-space,space-before-tab
+    excludesfile=~/.gitignore_global
+    pager="diff-so-fancy | less --tabs=4 -RFX"
+
 [alias]
-  st="status -sb"
-  co=checkout
-  l=log --graph --abbrev-commit --date=relative
-  ll=log --graph --abbrev-commit --date=relative --name-status
-  llo=log --graph --abbrev-commit --date=relative --name-status master..origin/master
-  lp=log --graph --abbrev-commit --date=relative -p --word-diff
-  lpo=log --graph --abbrev-commit --date=relative -p master..origin/master --word-diff
-  lo=log --graph --abbrev-commit --date=relative master..origin/master
+    st="status -sb"
+    co=checkout
+    l=log --graph --abbrev-commit --date=relative
+    ll=log --graph --abbrev-commit --date=relative --name-status
+    llo=log --graph --abbrev-commit --date=relative --name-status master..origin/master
+    lp=log --graph --abbrev-commit --date=relative -p --word-diff
+    lpo=log --graph --abbrev-commit --date=relative -p master..origin/master --word-diff
+    lo=log --graph --abbrev-commit --date=relative master..origin/master
+
 [format]
-  pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
+    pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
+
+[diff-so-fancy]
+    markEmptyLines = false
+
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
+
+[color "diff"]
+	meta = 227
+	frag = magenta bold
+	commit = 227 bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+
 [commit]
-	verbose = true
-[diff]
-	compactionHeuristic = true
-[pager]
-  log = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less -x1,5
-  show = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less -x1,5
-  diff = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less -x1,5
+    verbose=true
+
+
