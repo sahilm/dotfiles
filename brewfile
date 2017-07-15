@@ -13,7 +13,7 @@ brew "coreutils"
 brew "curl"
 brew "diff-so-fancy"
 brew "direnv"
-brew "git", args: ["with-blk-sha1", "with-curl", "with-openssl", "with-pcre"]
+brew "git", args: ["with-blk-sha1", "with-curl", "with-openssl", "with-pcre", "with-persistent-https"]
 brew "docker"
 brew "docker-machine"
 brew "docker-compose"

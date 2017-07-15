@@ -18,6 +18,7 @@
     pager="diff-so-fancy | less --tabs=4 -RFX"
 
 [alias]
+    ci="commit"
     st="status -sb"
     co=checkout
     l=log --graph --abbrev-commit --date=relative
@@ -40,14 +41,24 @@
     newHighlight = green bold 22
 
 [color "diff"]
-	meta = 227
-	frag = magenta bold
-	commit = 227 bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
+    meta = 227
+	  frag = magenta bold
+    commit = 227 bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
 
 [commit]
     verbose=true
 
+[url "persistent-https"]
+    insteadof = https
 
+[url "persistent-http"]
+	  insteadof = http
+
+[protocol "persistent-https"]
+    allow = always
+
+[protocol "persistent-http"]
+    allow = always
