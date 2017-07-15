@@ -3,6 +3,13 @@
 # https://stackoverflow.com/questions/59895/getting-the-source-directory-of-a-bash-script-from-within
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+function setup_service() {
+  ln -sf $1 $HOME/Library/LaunchAgents
+  launchctl load -w $1
+}
+
+export -f setup_service
+
 function use_brewed_bash() {
     local brew_bash="$(brew --prefix)/bin/bash"
     if ! grep -q ${brew_bash} /etc/shells; then
@@ -32,6 +39,8 @@ find ${DIR} -name '.[^.DS_Store]*' -type f -depth 1 | xargs -I % ln -sf % $HOME
 mkdir -p $HOME/.ssh
 ln -sf ${DIR}/.ssh/config $HOME/.ssh/config
 
+# Setup services
+find ${DIR}/services/*.plist -type f | xargs -n 1 -I {} bash -c 'setup_service "$@"' _ {}
 
 # brew stuff
 brew_it
