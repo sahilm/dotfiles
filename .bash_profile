@@ -48,9 +48,7 @@ source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.
 # Enable direnv
 eval "$(direnv hook $0)"
 # docker-machine
-if docker-machine status | grep -q 'Running'; then
-    eval $(docker-machine env default)
-fi
+eval $(docker-machine env default)
 # Set tab width to 4
 tabs -4
 
