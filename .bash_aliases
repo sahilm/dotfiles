@@ -17,7 +17,7 @@ export -f serve
 
 # So that you can bootstrap from anywhere!
 function bootstrap() {
-    $HOME/src/dotfiles/machine_boostrap.sh
+    $HOME/src/dotfiles/machine_bootstrap.sh
 }
 
 export -f bootstrap
