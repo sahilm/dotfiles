@@ -1,5 +1,6 @@
 alias la='ls -AF'
 alias l='ls -al'
+alias ll='ls -al'
 alias ls='ls -G'
 alias cdgo="cd $GOPATH"
 alias mygo="cd $GOPATH/src/github.com/sahilm"
