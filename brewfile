@@ -38,7 +38,7 @@ brew "lastpass-cli"
 brew "leiningen"
 brew "libxml2"
 brew "libxslt"
-brew "make"
+brew "make", args: ["with-default-names"]
 brew "mas"
 brew "maven"
 brew "mtr"
