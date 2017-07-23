@@ -829,13 +829,13 @@
 	<key>HotKeyTogglesWindow</key>
 	<false/>
 	<key>Hotkey</key>
-	<false/>
+	<true/>
 	<key>HotkeyChar</key>
-	<integer>0</integer>
+	<integer>32</integer>
 	<key>HotkeyCode</key>
-	<integer>0</integer>
+	<integer>49</integer>
 	<key>HotkeyModifiers</key>
-	<integer>0</integer>
+	<integer>524288</integer>
 	<key>IRMemory</key>
 	<integer>4</integer>
 	<key>JobName</key>
@@ -891,9 +891,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>370 45 678 265 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>52 302 796 473 0 0 1280 778 </string>
+	<string>133 309 937 465 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 20 1274 758 0 0 1280 778 </string>
+	<string>3 15 1274 753 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
