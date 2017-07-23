@@ -8,7 +8,7 @@ export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWCOLORHINTS=1
 
 # Show our fancy prompt!
-export PROMPT_COMMAND='__git_ps1 "\w" " "'
+export PROMPT_COMMAND='__git_ps1 "\W" " "'
 
 # When the shell exits, append to the history file instead of overwriting it
 shopt -s histappend
