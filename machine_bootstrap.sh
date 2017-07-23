@@ -5,7 +5,7 @@ DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 function setup_service() {
   ln -sf $1 $HOME/Library/LaunchAgents
-  launchctl load -w $1
+  launchctl load -w $1 &>/dev/null
 }
 
 export -f setup_service
