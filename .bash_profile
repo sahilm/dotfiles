@@ -60,3 +60,6 @@ eval "$(fasd --init auto)"
 
 # source all aliases
 . $HOME/.bash_aliases
+
+# Alias git to hub
+eval "$(hub alias -s)"
