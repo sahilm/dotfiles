@@ -891,9 +891,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>370 45 678 265 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>133 309 937 465 0 0 1280 778 </string>
+	<string>133 279 918 495 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>3 15 1274 753 0 0 1280 778 </string>
+	<string>0 4 1280 774 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1637,6 +1637,8 @@
 			<array/>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
+			<key>Thin Strokes</key>
+			<integer>2</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Triggers</key>
@@ -1739,7 +1741,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-07-22T22:17:54Z</date>
+	<date>2017-07-27T21:32:09Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
