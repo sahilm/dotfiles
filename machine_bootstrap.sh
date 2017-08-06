@@ -35,7 +35,7 @@ function brew_it() {
 
 # Setup dotfiles
 mkdir -p $HOME/bin
-find ${DIR} -name '.[^.DS_Store]*' -type f -depth 1 | xargs -I % ln -sf % $HOME
+find ${DIR} -name '.*' -type f -depth 1 | grep -v .DS_Store | xargs -I % ln -sf % $HOME
 mkdir -p $HOME/.ssh
 ln -sf ${DIR}/.ssh/config $HOME/.ssh/config
 
