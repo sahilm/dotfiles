@@ -42,6 +42,9 @@ ln -sf ${DIR}/.ssh/config $HOME/.ssh/config
 # Setup services
 find ${DIR}/services/*.plist -type f | xargs -n 1 -I {} bash -c 'setup_service "$@"' _ {}
 
+# Symlink over vim colorschemes
+ln -sf ${DIR}/vim-colorschemes $HOME/.vim/colors
+
 # brew stuff
 brew_it
 use_brewed_bash
