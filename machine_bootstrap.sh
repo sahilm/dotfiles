@@ -39,11 +39,11 @@ find ${DIR} -name '.*' -type f -depth 1 | grep -v .DS_Store | xargs -I % ln -sf 
 mkdir -p $HOME/.ssh
 ln -sf ${DIR}/.ssh/config $HOME/.ssh/config
 
+ln -sf ${DIR}/vim-colorschemes $HOME/.vim/colors
+ln -sf ${DIR}/vim-autoload $HOME/.vim/autoload
+
 # Setup services
 find ${DIR}/services/*.plist -type f | xargs -n 1 -I {} bash -c 'setup_service "$@"' _ {}
-
-# Symlink over vim colorschemes
-ln -sf ${DIR}/vim-colorschemes $HOME/.vim/colors
 
 # brew stuff
 brew_it
