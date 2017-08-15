@@ -10,6 +10,9 @@ export GIT_PS1_SHOWCOLORHINTS=1
 # Show our fancy prompt!
 export PROMPT_COMMAND='__git_ps1 "\W" " "'
 
+shopt -s histappend
+export PROMPT_COMMAND='history -a;history -n; $PROMPT_COMMAND'
+
 # Remove dupes from history
 export HISTCONTROL=ignoreboth:erasedups
 # Infinite history
