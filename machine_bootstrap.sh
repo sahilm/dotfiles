@@ -79,6 +79,9 @@ gem update --system
 gem update
 gem cleanup
 
+# Update all the npms
+npm update -g
+
 # Setup workspace
 mkdir -p $HOME/src
 mkdir -p ${GOPATH}
