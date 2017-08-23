@@ -10,17 +10,6 @@ export GIT_PS1_SHOWCOLORHINTS=1
 # Show our fancy prompt!
 export PROMPT_COMMAND='__git_ps1 "\W" " "'
 
-# Remove dupes from history
-export HISTCONTROL=ignoreboth:erasedups
-# Infinite history
-# http://superuser.com/a/479727
-export HISTSIZE=""
-
-# When the shell exits, append to the history file instead of overwriting it
-shopt -s histappend
-# Sync history between terms
-export PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND"
-
 # Set the RBENV root env var
 export RBENV_ROOT=$HOME/.rbenv
 
@@ -64,3 +53,10 @@ eval "$(fasd --init auto)"
 
 # Alias git to hub
 eval "$(hub alias -s)"
+
+export HISTCONTROL=ignoredups:erasedups
+# Infinite history
+# http://superuser.com/a/479727
+export HISTSIZE=""
+shopt -s histappend
+export PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
