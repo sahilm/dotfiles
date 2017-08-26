@@ -60,3 +60,6 @@ export HISTCONTROL=ignoredups:erasedups
 export HISTSIZE=""
 shopt -s histappend
 export PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
+
+# clear dupes in history
+hfix
