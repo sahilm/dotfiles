@@ -58,7 +58,7 @@ export HISTCONTROL=ignoredups:erasedups
 # Infinite history
 # http://superuser.com/a/479727
 export HISTSIZE=""
-export PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
+# export PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
 
 # clear dupes in history
 hfix
