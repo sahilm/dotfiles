@@ -62,3 +62,5 @@ export HISTSIZE=""
 
 # clear dupes in history
 hfix
+
+shopt -s histappend
