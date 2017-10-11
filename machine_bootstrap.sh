@@ -39,6 +39,7 @@ find ${DIR} -name '.*' -type f -depth 1 | grep -v .DS_Store | xargs -I % ln -sf 
 mkdir -p $HOME/.ssh
 ln -sf ${DIR}/.ssh/config $HOME/.ssh/config
 
+mkdir -p $HOME/.vim
 ln -sf ${DIR}/vim-colorschemes $HOME/.vim/colors
 ln -sf ${DIR}/vim-autoload $HOME/.vim/autoload
 
