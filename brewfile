@@ -63,6 +63,8 @@ brew "unrar"
 brew "vim", args: ["with-override-system-vi"]
 brew "watch"
 brew "cloudfoundry/tap/bosh-cli"
+brew "cloudfoundry/tap/bbl"
+brew "cloudfoundry/tap/cf-cli"
 cask "1password"
 cask "appcleaner"
 cask "atom"
@@ -86,6 +88,7 @@ cask "transmission"
 cask "vagrant"
 cask "virtualbox"
 cask "caskroom/fonts/font-fira-code"
+cask "caskroom/versions/java8"
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
