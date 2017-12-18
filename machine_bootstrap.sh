@@ -25,6 +25,7 @@ function use_brewed_bash() {
 function brew_it() {
     which brew &>/dev/null || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew tap Homebrew/bundle
+    brew update
     brew bundle --file=$DIR/brewfile
     brew upgrade
     brew cask outdated -q | xargs -I % brew cask reinstall %

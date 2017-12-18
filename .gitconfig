@@ -51,14 +51,3 @@
 [commit]
     verbose=true
 
-[url "persistent-https"]
-    insteadof = https
-
-[url "persistent-http"]
-	  insteadof = http
-
-[protocol "persistent-https"]
-    allow = always
-
-[protocol "persistent-http"]
-    allow = always
