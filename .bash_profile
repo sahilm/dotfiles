@@ -23,8 +23,7 @@ export EDITOR=vim
 eval "$(rbenv init -)"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-# Set the latest Java as the JAVA_HOME
-export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
 # Enable Bash completion
 source $(brew --prefix)/etc/bash_completion
