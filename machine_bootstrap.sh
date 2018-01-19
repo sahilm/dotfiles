@@ -45,7 +45,7 @@ ln -sf ${DIR}/vim-colorschemes $HOME/.vim/colors
 ln -sf ${DIR}/vim-autoload $HOME/.vim/autoload
 
 # Setup services
-find ${DIR}/services/*.plist -type f | xargs -n 1 -I {} bash -c 'setup_service "$@"' _ {}
+# find ${DIR}/services/*.plist -type f | xargs -n 1 -I {} bash -c 'setup_service "$@"' _ {}
 
 # brew stuff
 brew_it
