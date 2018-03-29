@@ -69,12 +69,12 @@ fi
 ln -sf ${DIR}/default-gems $(rbenv root)/default-gems
 
 # Get Ruby on the box
-RUBY_VERSION="2.5.0"
+RUBY_VERSION="2.5.1"
 if ! rbenv versions --bare | grep -q ${RUBY_VERSION}; then
     rbenv install ${RUBY_VERSION} --keep
 fi
 
-rbenv global 2.5.0
+rbenv global 2.5.1
 
 # Update all default gems
 gem update --system
@@ -82,7 +82,8 @@ gem update
 gem cleanup
 
 # Update all the npms
-npm update -g
+npm i npm
+npm update -g .
 
 # Setup workspace
 mkdir -p $HOME/src
