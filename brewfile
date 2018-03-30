@@ -65,6 +65,7 @@ brew "tree"
 brew "unrar"
 brew "vim", args: ["with-override-system-vi"]
 brew "watch"
+brew "yarn"
 brew "cloudfoundry/tap/bosh-cli"
 brew "cloudfoundry/tap/bbl"
 brew "cloudfoundry/tap/cf-cli"
