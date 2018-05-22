@@ -51,10 +51,6 @@ ln -sf ${DIR}/vim-autoload $HOME/.vim/autoload
 brew_it
 use_brewed_bash
 
-chmod 0400 $HOME/Dropbox/creds/.ssh/id_rsa
-ln -sf $HOME/Dropbox/creds/.ssh/id_rsa $HOME/.ssh/id_rsa
-ln -sf $HOME/Dropbox/.bash_history $HOME/.bash_history
-
 . $HOME/.bash_profile &> /dev/null
 
 # Setup Docker Machine

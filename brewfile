@@ -83,7 +83,6 @@ cask "flycut"
 cask "google-chrome"
 cask "google-cloud-sdk"
 cask "google-photos-backup-and-sync"
-cask "intellij-idea"
 cask "iterm2"
 cask "keepingyouawake"
 cask "kindle"
@@ -102,5 +101,3 @@ cask "caskroom/versions/tunnelblick-beta"
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Simple Desktops", id: 460866217
-mas "Wunderlist", id: 410628904
