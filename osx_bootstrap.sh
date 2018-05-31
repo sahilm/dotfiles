@@ -9,13 +9,13 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Use TouchID with sudo
-sudo echo "auth       sufficient     pam_tid.so" >> /etc/pam.d/sudo
+sudo bash -c 'echo "auth       sufficient     pam_tid.so" >> /etc/pam.d/sudo'
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "work kaamputer"
-sudo scutil --set HostName "work kaamputer"
-sudo scutil --set LocalHostName "work kaamputer"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "work kaamputer"
+sudo scutil --set ComputerName "work-kaamputer"
+sudo scutil --set HostName "work-kaamputer"
+sudo scutil --set LocalHostName "work-kaamputer"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "work-kaamputer"
 
 # Disable transparency in the menu bar and elsewhere on Yosemite
 defaults write com.apple.universalaccess reduceTransparency -bool true
