@@ -1,6 +1,6 @@
 [user]
-    name=Sahil Muthoo
-    email=sahil.muthoo@gmail.com
+	name = Sahil Muthoo
+	email = sahil.muthoo@gmail.com
 
 [credential]
     helper=osxkeychain
@@ -51,3 +51,8 @@
 [commit]
     verbose=true
 
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
