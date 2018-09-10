@@ -28,10 +28,9 @@ function brew_it() {
     brew update
     brew bundle --file=$DIR/brewfile
     brew upgrade
-    brew cask outdated -q | xargs -I % brew cask reinstall %
+    brew cask outdated --quiet | xargs -I % brew cask reinstall %
     mas upgrade
     brew cleanup
-    brew cask cleanup
 }
 
 # Setup dotfiles
