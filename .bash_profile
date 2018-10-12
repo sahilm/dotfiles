@@ -15,7 +15,7 @@ export RBENV_ROOT=$HOME/.rbenv
 
 # Set GOPATH
 export GOPATH=$HOME/src/go
-export PATH="$HOME/bin:./bin:./node_modules/.bin:$RBENV_ROOT/bin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin:$PATH"
+export PATH="$HOME/bin:./bin:./node_modules/.bin:$RBENV_ROOT/bin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin:/usr/local/opt/python/libexec/bin:$PATH"
 export PAGER=less
 export EDITOR=vim
 

@@ -35,7 +35,6 @@ brew "git", args: ["with-curl", "with-openssl"]
 brew "gnu-sed"
 brew "go"
 brew "gradle"
-brew "graphviz", args: ["with-librsvg", "with-pango"]
 brew "grep"
 brew "grv"
 brew "hub"
