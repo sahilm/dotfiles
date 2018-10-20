@@ -23,3 +23,10 @@ function bootstrap() {
 
 export -f bootstrap
 
+# when spotlight fails to index things
+function reindex() {
+  sudo mdutil -a -i off
+  sudo mdutil -a -i on
+}
+
+export -f reindex
