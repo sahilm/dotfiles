@@ -15,7 +15,7 @@ sudo scutil --set LocalHostName "kaamputer"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "kaamputer"
 
 # Disable transparency in the menu bar and elsewhere on Yosemite
-defaults write com.apple.universalaccess reduceTransparency -bool true
+# defaults write com.apple.universalaccess reduceTransparency -bool true
 
 # Always show battery and clock icons
 defaults write com.apple.systemuiserver menuExtras -array \
@@ -23,10 +23,10 @@ defaults write com.apple.systemuiserver menuExtras -array \
 	"/System/Library/CoreServices/Menu Extras/Clock.menu"
 
 # Set highlight color to graphite
-defaults write NSGlobalDomain AppleHighlightColor -string "0.780400 0.815700 0.858800"
+# defaults write NSGlobalDomain AppleHighlightColor -string "0.780400 0.815700 0.858800"
 
 # Set sidebar icon size to medium
-defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
+# defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
 
 # Save to disk (not to iCloud) by default
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
@@ -41,7 +41,7 @@ defaults write com.apple.CrashReporter DialogType -string "none"
 sudo systemsetup -setrestartfreeze on
 
 # Check for software updates daily, not just once per week
-defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+# defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
 # Disable smart quotes as they’re annoying when typing code
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
@@ -68,7 +68,7 @@ defaults write com.apple.screencapture location -string "${HOME}/Desktop"
 defaults write com.apple.screencapture type -string "png"
 
 # Enable subpixel font rendering on non-Apple LCDs
-defaults write NSGlobalDomain AppleFontSmoothing -int 2
+# defaults write NSGlobalDomain AppleFontSmoothing -int 2
 
 # Enable HiDPI display modes (requires restart)
 sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
@@ -105,5 +105,5 @@ defaults write com.apple.dock persistent-apps -array
 defaults write com.apple.dock autohide -bool true
 
 # fix for no AA on fonts in mojave :(
-defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
-defaults -currentHost write -globalDomain AppleFontSmoothing -int 1
+# defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+# defaults -currentHost write -globalDomain AppleFontSmoothing -int 1
