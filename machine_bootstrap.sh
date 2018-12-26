@@ -68,12 +68,12 @@ fi
 ln -sf ${DIR}/default-gems $(rbenv root)/default-gems
 
 # Get Ruby on the box
-RUBY_VERSION="2.5.3"
+RUBY_VERSION="2.6.0"
 if ! rbenv versions --bare | grep -q ${RUBY_VERSION}; then
     rbenv install ${RUBY_VERSION} --keep
 fi
 
-rbenv global 2.5.3
+rbenv global 2.6.0
 
 # Update all default gems
 gem update --system
