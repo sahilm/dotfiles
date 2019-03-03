@@ -34,7 +34,7 @@ brew "findutils"
 brew "fzf"
 brew "gawk"
 brew "gcc"
-brew "git", args: ["with-curl", "with-openssl"]
+brew "git"
 brew "gnu-sed"
 brew "gradle"
 brew "grep"
