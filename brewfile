@@ -37,6 +37,7 @@ brew "fzf"
 brew "gawk"
 brew "gcc"
 brew "git"
+brew "glances"
 brew "gnu-sed"
 brew "gradle"
 brew "grep"
@@ -57,9 +58,11 @@ brew "nmap"
 brew "node"
 brew "openvpn"
 brew "parallel"
+brew "pigz"
 brew "pipenv"
 brew "postgresql", restart_service: true
 brew "pstree"
+brew "pv"
 brew "pwgen"
 brew "python@2"
 brew "ruby-build"
@@ -93,6 +96,7 @@ cask "firefox"
 cask "fly"
 cask "flycut"
 cask "font-fira-code"
+cask "gfxcardstatus"
 cask "github"
 cask "google-chrome"
 cask "google-chrome-canary"
@@ -116,9 +120,9 @@ cask "tunnelblick-beta"
 cask "vagrant"
 cask "virtualbox"
 cask "vlc"
-mas "Boom 3D", id: 1233048948
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Simple Desktops", id: 460866217
-mas "Wunderlist", id: 410628904
+mas "com.apple.iWork.Keynote", id: 409183694
+mas "com.apple.iWork.Numbers", id: 409203825
+mas "com.apple.iWork.Pages", id: 409201541
+mas "com.globaldelight.Boom3DMAS", id: 1233048948
+mas "com.tincorporated.simpledesktops", id: 460866217
+mas "com.wunderkinder.wunderlistdesktop", id: 410628904
