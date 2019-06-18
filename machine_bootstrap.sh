@@ -56,14 +56,6 @@ ln -sf $HOME/Dropbox/.bash_history $HOME/.bash_history
 
 . $HOME/.bash_profile &> /dev/null
 
-# Setup Docker Machine
-(docker-machine ls | grep -q default) || docker-machine create default --driver virtualbox
-
-# Setup Docker Machine NFS for super fast volume mounts
-if docker-machine status | grep -q 'Running'; then
-    docker-machine-nfs default
-fi
-
 # Gems to install by default on any new Ruby. See rbenv-default-gems
 ln -sf ${DIR}/default-gems $(rbenv root)/default-gems
 
