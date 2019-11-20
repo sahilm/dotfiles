@@ -1,3 +1,5 @@
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # Show unstaged(*) and staged(+) changes
 export GIT_PS1_SHOWDIRTYSTATE=1
 # Show stashes($)
