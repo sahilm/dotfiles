@@ -60,12 +60,12 @@ ln -sf $HOME/Dropbox/.bash_history $HOME/.bash_history
 ln -sf ${DIR}/default-gems $(rbenv root)/default-gems
 
 # Get Ruby on the box
-RUBY_VERSION="2.6.3"
+RUBY_VERSION="2.6.5"
 if ! rbenv versions --bare | grep -q ${RUBY_VERSION}; then
     rbenv install ${RUBY_VERSION} --keep
 fi
 
-rbenv global 2.6.3
+rbenv global 2.6.5
 
 # Update all default gems
 gem update --system
