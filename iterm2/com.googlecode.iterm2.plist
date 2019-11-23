@@ -41671,13 +41671,14 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.6</string>
-		<string>3.3.4</string>
+		<string>3.2.9</string>
 		<string>3.3.1</string>
 		<string>3.3.3</string>
 		<string>3.3.5</string>
+		<string>3.3.7</string>
 		<string>3.3.0</string>
 		<string>3.3.2</string>
-		<string>3.2.9</string>
+		<string>3.3.4</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
@@ -41693,7 +41694,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>B67B19EE-F3B8-44CB-8ACC-DC6E50532456</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>39</integer>
+	<integer>40</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -42529,7 +42530,7 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>disableMetalWhenUnplugged</key>
-	<false/>
+	<true/>
 	<key>findIgnoreCase_iTerm</key>
 	<true/>
 	<key>findMode_iTerm</key>
@@ -42537,12 +42538,12 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.6</string>
+	<string>3.3.7</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
 	<false/>
 	<key>metalMaximizeThroughput</key>
-	<false/>
+	<true/>
 </dict>
 </plist>
