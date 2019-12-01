@@ -40118,7 +40118,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>290 380 796 486 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1680 1027 0 0 1680 1027 </string>
+	<string>0 0 1920 1177 0 0 1920 1177 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -41671,21 +41671,21 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.6</string>
-		<string>3.2.9</string>
+		<string>3.3.4</string>
 		<string>3.3.1</string>
 		<string>3.3.3</string>
 		<string>3.3.5</string>
 		<string>3.3.7</string>
 		<string>3.3.0</string>
 		<string>3.3.2</string>
-		<string>3.3.4</string>
+		<string>3.2.9</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1680, 1050}}</string>
+		<string>{{0, 0}, {1920, 1200}}</string>
 		<key>topLeft</key>
-		<string>{518, 823}</string>
+		<string>{440, 659}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -41694,7 +41694,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>B67B19EE-F3B8-44CB-8ACC-DC6E50532456</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>40</integer>
+	<integer>47</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -42397,16 +42397,16 @@
 	</dict>
 	<key>NoSyncSearchHistory2</key>
 	<array>
+		<string>spec</string>
+		<string>file</string>
+		<string>here</string>
+		<string>apps</string>
+		<string>rout</string>
 		<string>mysql</string>
 		<string>maria</string>
-		<string>spec</string>
 		<string>directory</string>
 		<string>recur</string>
 		<string>tag</string>
-		<string>tags</string>
-		<string>trace</string>
-		<string>sahil</string>
-		<string>progress</string>
 	</array>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>566262270.46156895</real>
@@ -42482,7 +42482,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-11-20T22:19:10Z</date>
+	<date>2019-11-28T00:08:26Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -42544,6 +42544,8 @@
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
 	<false/>
 	<key>metalMaximizeThroughput</key>
-	<true/>
+	<false/>
+	<key>preferIntegratedGPU</key>
+	<false/>
 </dict>
 </plist>

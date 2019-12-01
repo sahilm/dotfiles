@@ -11,19 +11,19 @@
         "revision": "96bb54b92eec8c751b086be769511a9f2181bdf9"
       },
       "homebrew/bundle": {
-        "revision": "d7bc8cf3d61097cd780b84cf8b74c7b5eb7298c5"
+        "revision": "aced1252de5657a0a24313fc321cb5eb406f4725"
       },
       "homebrew/cask": {
-        "revision": "4a329850601b0ff6f38ba712c63b960e715ec43f"
+        "revision": "6127054c1f8df680f5fa37bae3126e6e610e5ffc"
       },
       "homebrew/cask-fonts": {
         "revision": "fa725d59e23f22e371e6c0ba0eab67b43cb59d72"
       },
       "homebrew/cask-versions": {
-        "revision": "defb466cce46469019a0963c56db5d7c224544de"
+        "revision": "caf946a7dee8bb4ca54d5c802dc4e650cfb37008"
       },
       "homebrew/core": {
-        "revision": "a62c03bb3b6a9e37edf83751ead95a55194db6de"
+        "revision": "0fe8c08b3b2965326c369b9d6e0fb15a51f275d2"
       },
       "homebrew/services": {
         "revision": "5d9721075f2b538e29ea4022ff666afa7065f164"
@@ -637,20 +637,16 @@
           "prefix": "/usr/local",
           "files": {
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/oniguruma-6.9.3.catalina.bottle.tar.gz",
-              "sha256": "6fbdebd83b61021a0614e81e7b767e1660ba0a8d7e2f5a1e36b8db204b88c5ca"
+              "url": "https://homebrew.bintray.com/bottles/oniguruma-6.9.3.catalina.bottle.1.tar.gz",
+              "sha256": "06193af02210587ee2b6d63fcf5f18fda46ba84cb21143b5f5b12abb456ff3ec"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/oniguruma-6.9.3.mojave.bottle.tar.gz",
-              "sha256": "f00f8c6f8afd8875fed685a9190cb0c5e9b5ceef58ef1e489fb17a42bddc9672"
+              "url": "https://homebrew.bintray.com/bottles/oniguruma-6.9.3.mojave.bottle.1.tar.gz",
+              "sha256": "ed28f2729bacc662f624254a442a90219ee885a8ef1c9241542c4a8ec55c15b9"
             },
             "high_sierra": {
-              "url": "https://homebrew.bintray.com/bottles/oniguruma-6.9.3.high_sierra.bottle.tar.gz",
-              "sha256": "42f48f03fc7030dcdcd15b920e863c107982cabfc063e3ccb60032e31b01562c"
-            },
-            "sierra": {
-              "url": "https://homebrew.bintray.com/bottles/oniguruma-6.9.3.sierra.bottle.tar.gz",
-              "sha256": "67a2105211f270ed618fdb3d29946ad89e2cb6e7bbb5cbb7dc7f48bc4e94e6db"
+              "url": "https://homebrew.bintray.com/bottles/oniguruma-6.9.3.high_sierra.bottle.1.tar.gz",
+              "sha256": "4dc26cf4626173982cca426a550d1554416d099505537666da01fba148aa8f13"
             }
           }
         }
@@ -1678,7 +1674,7 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.2.0",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "a62c03bb3b6a9e37edf83751ead95a55194db6de",
+        "Homebrew/homebrew-core": "0fe8c08b3b2965326c369b9d6e0fb15a51f275d2",
         "CLT": "11.2.0.0.1.1571444319",
         "Xcode": "11.2.1",
         "macOS": "10.15.1"
