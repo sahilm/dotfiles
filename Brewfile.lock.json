@@ -23,7 +23,7 @@
         "revision": "11f15437c5ac32b60c2ebe1e3ec4888f56d8a087"
       },
       "homebrew/core": {
-        "revision": "1ca9851f299d383843972104ad90b6e4b7641165"
+        "revision": "ee22a6deaab4d7b2a29bf898849c6522c1569458"
       },
       "homebrew/services": {
         "revision": "9ddb42a9add6845053d098ffc4c568b55b70776e"
@@ -817,11 +817,6 @@
               "sha256": "e7f49884dbeaae3e7ccc9dc3a58fec587c2a594f50314dbc33cde44c6f807f53"
             }
           }
-        },
-        "options": {
-          "args": [
-            "with-default-names"
-          ]
         }
       },
       "mas": {
@@ -1557,7 +1552,7 @@
         "version": "1.5.0-2f0c701f"
       },
       "google-chrome": {
-        "version": "73.0.3683.103",
+        "version": "80.0.3987.116",
         "options": {
           "full_name": "google-chrome"
         }
@@ -1728,7 +1723,7 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.2.6",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "1ca9851f299d383843972104ad90b6e4b7641165",
+        "Homebrew/homebrew-core": "ee22a6deaab4d7b2a29bf898849c6522c1569458",
         "CLT": "11.0.33.16",
         "Xcode": "11.3",
         "macOS": "10.15.3"
