@@ -14,16 +14,16 @@
         "revision": "2951772d594fb8ba9daf1ae1123831fd03edcb69"
       },
       "homebrew/cask": {
-        "revision": "d798892828d76e43faace4d4c710143701ed25dc"
+        "revision": "88e5335c5ea5ebfb24117414675ff639278c463c"
       },
       "homebrew/cask-fonts": {
-        "revision": "57fc91532681f3fa7b3a269ede09ac821da8c931"
+        "revision": "d67992875ef158ba31c59dc9a89aaf1e4d348fdb"
       },
       "homebrew/cask-versions": {
-        "revision": "4bdecbe0f5bc2bace49b48ac03dd771d006faefa"
+        "revision": "d64bf75cce8babc700117bcca1d3f3a3d9ad038f"
       },
       "homebrew/core": {
-        "revision": "d3ae1317a8259b2553cd53b1dd78f33a6e062189"
+        "revision": "bd40745ecba2f893db446ea28431d396d0c23a39"
       },
       "homebrew/services": {
         "revision": "64347a3a5761db1b392f1b30b045aeb4592e17a9"
@@ -1500,10 +1500,16 @@
         "version": "1.33.0"
       },
       "cursorcerer": {
-        "version": "latest"
+        "version": "latest",
+        "options": {
+          "full_name": "cursorcerer"
+        }
       },
       "discord": {
-        "version": "0.0.251"
+        "version": "0.0.251",
+        "options": {
+          "full_name": "discord"
+        }
       },
       "docker": {
         "version": "2.2.0.5,43884",
@@ -1518,7 +1524,10 @@
         }
       },
       "electrum": {
-        "version": "3.3.8"
+        "version": "3.3.8",
+        "options": {
+          "full_name": "electrum"
+        }
       },
       "firefox": {
         "version": "56.0.2",
@@ -1545,7 +1554,10 @@
         }
       },
       "github": {
-        "version": "1.5.0-2f0c701f"
+        "version": "1.1.1-bf9cffc6",
+        "options": {
+          "full_name": "github"
+        }
       },
       "google-chrome": {
         "version": "latest",
@@ -1554,7 +1566,10 @@
         }
       },
       "google-chrome-canary": {
-        "version": "latest"
+        "version": "latest",
+        "options": {
+          "full_name": "google-chrome-canary"
+        }
       },
       "google-cloud-sdk": {
         "version": "latest",
@@ -1659,7 +1674,10 @@
         }
       },
       "tunnelblick-beta": {
-        "version": "3.7.9beta01,5190"
+        "version": "3.7.6beta01,5020",
+        "options": {
+          "full_name": "tunnelblick-beta"
+        }
       },
       "vagrant": {
         "version": "2.2.7",
@@ -1681,6 +1699,24 @@
       },
       "wkhtmltopdf": {
         "version": "0.12.5"
+      },
+      "microsoft-teams": {
+        "version": "1.3.00.362",
+        "options": {
+          "full_name": "microsoft-teams"
+        }
+      },
+      "qbittorrent": {
+        "version": "4.2.3",
+        "options": {
+          "full_name": "qbittorrent"
+        }
+      },
+      "virtualbox": {
+        "version": "6.1.4,136177",
+        "options": {
+          "full_name": "virtualbox"
+        }
       }
     },
     "mas": {
@@ -1702,8 +1738,9 @@
       },
       "Wunderlist": {
         "id": "410628904",
-        "version": "3.4.20"
-      }
+        "version": "3.4.22"
+      },
+      "Install macOS Catalina": null
     }
   },
   "system": {
@@ -1717,12 +1754,12 @@
         "macOS": "10.14.2"
       },
       "catalina": {
-        "HOMEBREW_VERSION": "2.2.6",
+        "HOMEBREW_VERSION": "2.2.11",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "ee22a6deaab4d7b2a29bf898849c6522c1569458",
-        "CLT": "11.0.33.16",
-        "Xcode": "11.3",
-        "macOS": "10.15.3"
+        "Homebrew/homebrew-core": "bd40745ecba2f893db446ea28431d396d0c23a39",
+        "CLT": "",
+        "Xcode": "",
+        "macOS": "10.15.4"
       }
     }
   }
