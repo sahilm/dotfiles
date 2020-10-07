@@ -88,8 +88,7 @@ cask "google-chrome-canary"
 cask "google-cloud-sdk"
 cask "google-photos-backup-and-sync"
 cask "iterm2"
-cask "java"
-cask "java8"
+brew "java"
 cask "jetbrains-toolbox"
 cask "keepingyouawake"
 cask "kindle"
@@ -111,5 +110,3 @@ cask "vlc"
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Simple Desktops", id: 460866217
-mas "Wunderlist", id: 410628904
