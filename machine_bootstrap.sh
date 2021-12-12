@@ -28,8 +28,8 @@ function brew_it() {
   brew update
   brew bundle --file=$DIR/brewfile
   brew upgrade
-  brew cask outdated --quiet | xargs -I % brew cask reinstall %
-  mas upgrade
+  brew outdated --quiet --cask | xargs -I % brew cask reinstall %
+  # mas upgrade
   brew cleanup
 }
 
@@ -60,12 +60,12 @@ ln -sf $HOME/Dropbox/.bash_history $HOME/.bash_history
 ln -sf ${DIR}/default-gems $(rbenv root)/default-gems
 
 # Get Ruby on the box
-RUBY_VERSION="2.7.0"
+RUBY_VERSION="3.0.3"
 if ! rbenv versions --bare | grep -q ${RUBY_VERSION}; then
   rbenv install ${RUBY_VERSION} --keep
 fi
 
-rbenv global 2.7.0
+rbenv global 3.0.3
 
 # Update all default gems
 gem update --system
@@ -75,3 +75,6 @@ gem cleanup
 # Setup workspace
 mkdir -p $HOME/src
 mkdir -p ${GOPATH}
+
+
+sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
