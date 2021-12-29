@@ -15,9 +15,8 @@ export PROMPT_COMMAND='__git_ps1 "\W" " "'
 # Set the RBENV root env var
 export RBENV_ROOT=$HOME/.rbenv
 
-# Set GOPATH
-export GOPATH=$HOME/src/go
-export PATH="$HOME/bin:./bin:./node_modules/.bin:$RBENV_ROOT/bin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin:/usr/local/opt/python/libexec/bin:$PATH"
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export PATH="$RBENV_ROOT/bin:/usr/local/bin:$PATH"
 export PAGER=less
 export EDITOR=vim
 
@@ -32,10 +31,10 @@ source $(brew --prefix)/etc/bash_completion
 # Enable a fancy git prompt from brew's bash completion package
 source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
 # aws completion
-complete -C '/usr/local/bin/aws_completer' aws
+complete -C "$(brew --prefix)/bin/aws_completer" aws
 # gcloud completion
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc"
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc"
 # Enable direnv
 eval "$(direnv hook $0)"
 # Set tab width to 4
@@ -43,9 +42,6 @@ tabs -4
 
 # setup fasd
 eval "$(fasd --init auto)"
-
-# Init fzf
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # source all aliases
 . $HOME/.bash_aliases
@@ -63,3 +59,5 @@ export HISTSIZE=""
 hfix
 
 shopt -s histappend
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

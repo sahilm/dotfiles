@@ -54,18 +54,20 @@ chmod 0400 $HOME/Dropbox/creds/.ssh/id_rsa
 ln -sf $HOME/Dropbox/creds/.ssh/id_rsa $HOME/.ssh/id_rsa
 ln -sf $HOME/Dropbox/.bash_history $HOME/.bash_history
 
+"$(brew --prefix)"/opt/fzf/install --all
+
 . $HOME/.bash_profile &>/dev/null
 
 # Gems to install by default on any new Ruby. See rbenv-default-gems
-ln -sf ${DIR}/default-gems $(rbenv root)/default-gems
+ln -sf ${DIR}/default-gems "$(rbenv root)"/default-gems
 
 # Get Ruby on the box
-RUBY_VERSION="3.0.3"
+RUBY_VERSION="3.1.0"
 if ! rbenv versions --bare | grep -q ${RUBY_VERSION}; then
   rbenv install ${RUBY_VERSION} --keep
 fi
 
-rbenv global 3.0.3
+rbenv global 3.1.0
 
 # Update all default gems
 gem update --system
@@ -74,7 +76,5 @@ gem cleanup
 
 # Setup workspace
 mkdir -p $HOME/src
-mkdir -p ${GOPATH}
 
-
-sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+sudo ln -sfn "$(brew --prefix)"/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
