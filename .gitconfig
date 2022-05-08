@@ -23,10 +23,10 @@
     co=checkout
     l=log --graph --abbrev-commit --date=relative
     ll=log --graph --abbrev-commit --date=relative --name-status
-    llo=log --graph --abbrev-commit --date=relative --name-status master..origin/master
+    llo=log --graph --abbrev-commit --date=relative --name-status main..origin/main
     lp=log --graph --abbrev-commit --date=relative -p --word-diff
-    lpo=log --graph --abbrev-commit --date=relative -p master..origin/master --word-diff
-    lo=log --graph --abbrev-commit --date=relative master..origin/master
+    lpo=log --graph --abbrev-commit --date=relative -p main..origin/main --word-diff
+    lo=log --graph --abbrev-commit --date=relative main..origin/main
 
 [format]
     pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset

@@ -28,3 +28,4 @@ function reindex() {
 }
 
 export -f reindex
+alias gyb='~/gyb/gyb'

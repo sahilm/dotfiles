@@ -62,12 +62,12 @@ ln -sf $HOME/Dropbox/.bash_history $HOME/.bash_history
 ln -sf ${DIR}/default-gems "$(rbenv root)"/default-gems
 
 # Get Ruby on the box
-RUBY_VERSION="3.1.0"
+RUBY_VERSION="3.1.2"
 if ! rbenv versions --bare | grep -q ${RUBY_VERSION}; then
   rbenv install ${RUBY_VERSION} --keep
 fi
 
-rbenv global 3.1.0
+rbenv global 3.1.2
 
 # Update all default gems
 gem update --system
